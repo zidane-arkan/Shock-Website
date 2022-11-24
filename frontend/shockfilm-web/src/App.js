@@ -1,7 +1,10 @@
+import Landing from "./components/layout/Landing";
 function App() {
   return (
     <div className="App">
-        <button className="btn btn-primary">Hello World!</button>
+      <section className="container-fluid overflow-hidden">
+        <Landing />
+      </section>
     </div>
   );
 }
