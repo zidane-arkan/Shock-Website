@@ -28,6 +28,24 @@ const HeroSlider = () => {
         </section>
     );
 };
+const HeroHeading = () => {
+    return (
+        <section className="hero__heading mx-auto">
+            <div className="heading__top">
+                <h1>
+                    Welcome to our official artworks website!
+                </h1>
+            </div>
+            <div className="heading__middle">
+                <p>Shock Film is a community and a production house based in Palembang which aims to be a place for young people to convert their hobbies into the artworks! </p>
+            </div>
+            <div className="heading__bottom">
+                <button className="btn__custom btn__started" type="button">Get Started</button>
+                <button className="btn__custom btn__contact" type="button">Contact Us</button>
+            </div>
+        </section>
+    );
+};
 const Home = () => {
     return (
         <motion.div
@@ -37,6 +55,7 @@ const Home = () => {
             className="col-md-12 px-0 py-0"
         >
             <HeroSlider />
+            <HeroHeading />
         </motion.div>
     );
 };
