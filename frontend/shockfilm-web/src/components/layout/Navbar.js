@@ -1,5 +1,6 @@
 import React from 'react';
 import shockLogo from '../../assets/logo/shockLogo.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
@@ -7,22 +8,22 @@ const Navbar = () => {
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>
-            <a className="navbar-brand" href="#">
+            <Link className="navbar-brand" href="#">
                 <img src={shockLogo} alt=""/>
-            </a>
+            </Link>
             <div className="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo03">
                 <ul className="navbar-nav navbar__nav__custom mr-auto mt-2 mt-lg-0">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home</a>
+                        <Link className="nav-link" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Portfolio</a>
+                        <Link className="nav-link" to="portfolio">Portfolio</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">blog</a>
+                        <Link className="nav-link" to="blog">blog</Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">our profile</a>
+                        <Link className="nav-link" to="ourprofile">our profile</Link>
                     </li>
                 </ul>
             </div>

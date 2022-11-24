@@ -1,6 +1,6 @@
-import Navbar from "./components/layout/Navbar";
-import Home from "./components/page/Home";
 import { BrowserRouter as Router } from 'react-router-dom';
+import Navbar from "./components/layout/Navbar";
+import AnimatedRoutes from './components/layout/AnimatedRoutes';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         <div className="row position-relative">
           <Router>
             <Navbar />
-            <Home />
+            <AnimatedRoutes />
           </Router>
         </div>
       </section>
