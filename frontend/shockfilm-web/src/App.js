@@ -1,10 +1,8 @@
-import Landing from "./components/layout/Landing";
+import Main from "./components/Main";
 function App() {
   return (
     <div className="App">
-      <section className="container-fluid overflow-hidden">
-        <Landing />
-      </section>
+      <Main />
     </div>
   );
 }

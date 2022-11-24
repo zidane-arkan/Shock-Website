@@ -7,14 +7,14 @@ const HeroSlider = () => {
     return (
         <section id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
-                <div className="carousel-item active" data-bs-interval="10000">
-                    <img src={img1} className="d-block w-90" alt="..." />
+                <div className="carousel-item active" data-bs-interval="5000">
+                    <img src={img1} className="d-block w-100" alt="..." />
                 </div>
-                <div className="carousel-item" data-bs-interval="2000">
-                    <img src={img2} className="d-block w-90" alt="..." />
+                <div className="carousel-item" data-bs-interval="5000">
+                    <img src={img2} className="d-block w-100" alt="..." />
                 </div>
-                <div className="carousel-item">
-                    <img src={img3} className="d-block w-90" alt="..." />
+                <div className="carousel-item" data-bs-interval="5000">
+                    <img src={img3} className="d-block w-100" alt="..." />
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -28,14 +28,12 @@ const HeroSlider = () => {
         </section>
     );
 };
-const Landing = () => {
+const Home = () => {
     return (
-        <div className="row">
-            <div className="col-md-12">
-                <HeroSlider />
-            </div>
+        <div className="col-md-12 px-0 py-0">
+            <HeroSlider />
         </div>
     );
 };
 
-export default Landing;
+export default Home;
