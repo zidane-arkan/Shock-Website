@@ -2,7 +2,7 @@ import React from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
-
+import { motion } from "framer-motion";
 const HeroSlider = () => {
     return (
         <section id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
@@ -30,9 +30,14 @@ const HeroSlider = () => {
 };
 const Home = () => {
     return (
-        <div className="col-md-12 px-0 py-0">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="col-md-12 px-0 py-0"
+        >
             <HeroSlider />
-        </div>
+        </motion.div>
     );
 };
 
