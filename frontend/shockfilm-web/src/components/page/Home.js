@@ -2,7 +2,10 @@ import React from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
+import movie_1 from '../../assets/movie/movie-1.png';
+import man from '../../assets/movie/man.png';
 import { motion } from "framer-motion";
+import { Link } from 'react-router-dom';
 const HeroSlider = () => {
     return (
         <section id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
@@ -30,7 +33,7 @@ const HeroSlider = () => {
 };
 const HeroHeading = () => {
     return (
-        <section className="hero__heading mx-auto">
+        <section className="hero__heading mx-auto position-absolute">
             <div className="heading__top">
                 <h1>
                     Welcome to our official artworks website!
@@ -46,16 +49,121 @@ const HeroHeading = () => {
         </section>
     );
 };
+const PopularWorks = () => {
+    const movieImg = {
+        "1": movie_1
+    };
+    return (
+        <section className="row row__margin__bottom row__custom__1">
+            <article className="popular__heading col-md-12 col-xl-12">
+                <h2>Our popular works</h2>
+                <Link className="nav-link nav__link__custom">View all</Link>
+            </article>
+            <article className="movie__box col-sm-12 col-md-12 col-xl-12">
+                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="videotype__top">
+                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                        <span className="line"></span>
+                    </div>
+                    <div className="videotype__bottom">
+                        <p>Short Film</p>
+                        <button className="btn btn__see btn-outline-light">See</button>
+                    </div>
+                </div>
+                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="videotype__top">
+                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                        <span className="line"></span>
+                    </div>
+                    <div className="videotype__bottom">
+                        <p>Short Film</p>
+                        <button className="btn btn__see btn-outline-light">See</button>
+                    </div>
+                </div>
+                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="videotype__top">
+                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                        <span className="line"></span>
+                    </div>
+                    <div className="videotype__bottom">
+                        <p>Short Film</p>
+                        <button className="btn btn__see btn-outline-light">See</button>
+                    </div>
+                </div>
+                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="videotype__top">
+                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                        <span className="line"></span>
+                    </div>
+                    <div className="videotype__bottom">
+                        <p>Short Film</p>
+                        <button className="btn btn__see btn-outline-light">See</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    );
+};
+const BehindScene = () => {
+    return (
+        <section className="row row__margin__bottom ">
+            <article className="behind__1 col-sm-12 col-md-3 col-xl-4">
+                <div className="behind__title">
+                    <h2>Men behind the scenes.</h2>
+                </div>
+                <div className="behind__text">
+                    <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+                    <button className="btn__custom btn__started" type="button">See More</button>
+                </div>
+            </article>
+            <article className="behind__2 col-sm-12 col-md-8 col-xl-8">
+                <img src={man} alt="Man Behind the scenes" width="80%" />
+            </article>
+        </section>
+    );
+};
+const AboutUs = () => {
+    const movieImg = {
+        "1": movie_1
+    };
+    return (
+        <section className="row row__margin__bottom ">
+            <article className="aboutus__1 col-sm-12 col-md-12 col-xl-12">
+                <div className="aboutus__title">
+                    <h2>What Are We?</h2>
+                    <p>Sebuah komunitas Perfilman di Palembang.</p>
+                </div>
+            </article>
+            <article className="aboutus__box col-sm-12 col-md-12 col-xl-12 position-relative">
+                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
+                    <div className="videotype__top">
+                        <img alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                    </div>
+                </div>
+            </article>
+        </section>
+    );
+};
 const Home = () => {
     return (
         <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="col-md-12 px-0 py-0"
+            className="col-md-12 position-relative px-0 py-0"
         >
             <HeroSlider />
             <HeroHeading />
+            <main className="row__custom">
+                <PopularWorks />
+                <BehindScene />
+                <AboutUs />
+            </main>
         </motion.div>
     );
 };

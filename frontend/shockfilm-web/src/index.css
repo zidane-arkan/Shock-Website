@@ -13,22 +13,54 @@ a,
 .nav-link {
   color: #fafafa !important;
 }
+.nav__link__custom {
+  font-size: 1.5rem;
+}
+.line {
+  width: 100%;
+  padding: 0.1px;
+  background-color: #c4c4c4;
+}
 
 .nav-item a {
   text-transform: uppercase !important;
   letter-spacing: 1.5px;
 }
-
+.btn__see {
+  padding: 3px;
+  width: 73px;
+  height: 29px;
+}
 .navbar__header {
   z-index: 10;
 }
+.movie__box,
+.movie__item {
+  display: flex;
+}
+.movie__box {
+  flex-direction: column;
+  text-align: left;
+  gap: 1.5rem;
+}
+.movie__item {
+  flex-direction: column;
+  gap: 1.5rem;
+}
 
 @media screen and (min-width: 1800px) {
-  h1 {
+  h1,
+  h2 {
     font-size: 3rem;
   }
   p {
+    margin: 0 !important;
     font-size: 1rem;
+    font-weight: 400;
+  }
+  h5 {
+    margin: 0 !important;
+    font-weight: 500;
   }
   button {
     border-radius: 16px;
@@ -42,16 +74,19 @@ a,
   .heading__bottom {
     font-size: 1.5rem;
   }
-  .navbar__header {
-    padding: 1.5rem 5rem !important ;
+  .row__custom {
+    margin-top: 3rem;
+  }
+  .navbar__header,
+  .row__custom {
+    padding: 1.5rem 10rem !important ;
   }
   .navbar__nav__custom {
     gap: 2rem;
   }
 
   .hero__heading {
-    position: absolute;
-    bottom: 7rem;
+    top: 20%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -79,7 +114,8 @@ a,
     width: 218px;
     height: 60px;
   }
-  .heading__bottom .btn__started {
+  .heading__bottom .btn__started,
+  .behind__text .btn__started {
     border: 0;
     background: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
   }
@@ -87,5 +123,98 @@ a,
     background-color: transparent;
     border: 1px solid #d7d7d7;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  /* Popular Works CSS */
+  .row__margin__bottom {
+    margin-bottom: 8.5rem;
+  }
+  .row__custom__1 {
+    gap: 2.5rem;
+
+    align-items: center;
+  }
+  .popular__heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: space-around;
+    align-items: center;
+  }
+  .movie__box {
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5rem;
+  }
+  .videotype__top,
+  .videotype__bottom {
+    display: flex;
+    width: 90%;
+  }
+  .videotype__top {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .videotype__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* Behind Scene CSS */
+  .behind__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .behind__title {
+    width: 90%;
+  }
+  .behind__title h2 {
+    font-size: 3.5rem;
+    line-height: 72px;
+    letter-spacing: -1px;
+  }
+  .behind__text {
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
+  }
+  .behind__text p {
+    font-size: 1.125rem;
+    line-height: 30px;
+    letter-spacing: -0.02em;
+  }
+  .behind__2 {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .behind__text .btn__custom {
+    font-size: 1.25rem;
+    line-height: 36px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 24px;
+    width: 218px;
+    height: 60px;
+  }
+  /* About Us CSS */
+  .aboutus__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .aboutus__1 > .aboutus__title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .aboutus__title p {
+    font-size: 1.25rem;
+    line-height: 36px;
+    letter-spacing: 0.5px;
   }
 }
