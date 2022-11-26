@@ -3,6 +3,7 @@ import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
 import movie_1 from '../../assets/movie/movie-1.png';
+import icon_1 from '../../assets/aboutus/1.png';
 import man from '../../assets/movie/man.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
@@ -127,11 +128,11 @@ const BehindScene = () => {
     );
 };
 const AboutUs = () => {
-    const movieImg = {
-        "1": movie_1
+    const aboutusImg = {
+        "1": icon_1
     };
     return (
-        <section className="row row__margin__bottom ">
+        <section className="row row__margin__bottom row__custom__2 ">
             <article className="aboutus__1 col-sm-12 col-md-12 col-xl-12">
                 <div className="aboutus__title">
                     <h2>What Are We?</h2>
@@ -139,10 +140,29 @@ const AboutUs = () => {
                 </div>
             </article>
             <article className="aboutus__box col-sm-12 col-md-12 col-xl-12 position-relative">
+                {/* <img className="turnish__bg__1 position-absolute" src="" alt="turnish__bg__1" /> */}
                 <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
-                    <div className="videotype__top">
-                        <img alt="Movie-1" width="100%" />
+                    <div className="aboutus__top">
+                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
                         <h5>Dua Pilar Satu Atap</h5>
+                    </div>
+                </div>
+                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
+                    <div className="aboutus__top">
+                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Posuere urna, sit amet molestie leo</h5>
+                    </div>
+                </div>
+                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
+                    <div className="aboutus__top">
+                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Semper pretium libero sed quam ac integer ut</h5>
+                    </div>
+                </div>
+                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
+                    <div className="aboutus__top">
+                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Lectus volutpat magna vitae in arcu</h5>
                     </div>
                 </div>
             </article>

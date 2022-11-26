@@ -77,6 +77,14 @@ a,
   .row__custom {
     margin-top: 3rem;
   }
+  .row__custom__1 {
+    gap: 2.5rem;
+    align-items: center;
+  }
+  .row__custom__2 {
+    gap: 6.5rem;
+    align-items: center;
+  }
   .navbar__header,
   .row__custom {
     padding: 1.5rem 10rem !important ;
@@ -128,11 +136,7 @@ a,
   .row__margin__bottom {
     margin-bottom: 8.5rem;
   }
-  .row__custom__1 {
-    gap: 2.5rem;
 
-    align-items: center;
-  }
   .popular__heading {
     display: flex;
     flex-direction: row;
@@ -200,6 +204,10 @@ a,
     height: 60px;
   }
   /* About Us CSS */
+  .turnish__bg__1 {
+    top: 1rem;
+    z-index: -1;
+  }
   .aboutus__1 {
     display: flex;
     flex-direction: column;
@@ -216,5 +224,42 @@ a,
     font-size: 1.25rem;
     line-height: 36px;
     letter-spacing: 0.5px;
+  }
+  .aboutus__box::before {
+    content: "";
+    position: absolute;
+    top: 5rem;
+    width: 1292px;
+    height: 53px;
+    background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+    filter: blur(100px);
+    border-radius: 10px;
+  }
+  .aboutus__box {
+    display: flex;
+    align-items: baseline;
+  }
+  .aboutus__box .aboutus__item {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutus__top,
+  .videotype__bottom {
+    display: flex;
+    width: 54%;
+  }
+  .aboutus__top {
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .aboutus__top h5 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 24px;
   }
 }
