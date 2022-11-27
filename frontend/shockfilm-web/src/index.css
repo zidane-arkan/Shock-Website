@@ -35,13 +35,18 @@ a,
   z-index: 10;
 }
 .movie__box,
-.movie__item {
+.movie__item,
+.discover__box {
   display: flex;
 }
-.movie__box {
-  flex-direction: column;
+.movie__box,
+.discover__box {
   text-align: left;
   gap: 1.5rem;
+}
+.discover__box {
+  row-gap: 4rem !important;
+  flex-wrap: wrap;
 }
 .movie__item {
   flex-direction: column;
@@ -49,6 +54,50 @@ a,
 }
 
 @media screen and (min-width: 1800px) {
+  .aboutus__1,
+  .client__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .client__1 > .client__title,
+  .aboutus__1 > .aboutus__title {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .movie__item,
+  .discover__item {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .videotype__top,
+  .videotype__bottom {
+    display: flex;
+    width: 85%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .movie__box,
+  .discover__box {
+    flex-direction: row;
+    text-align: left;
+    gap: 1.5rem;
+  }
+  .discover__box {
+    justify-content: space-between;
+  }
+  .discover__item .videotype__top,
+  .discover__item .videotype__bottom {
+    width: 100%;
+  }
+  .col__xl__custom {
+    width: 23%;
+  }
+
   .btn__custom {
     font-size: 1.25rem;
     line-height: 36px;
@@ -120,7 +169,7 @@ a,
   }
 
   .hero__heading {
-    top: 20%;
+    top: 8%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -170,20 +219,7 @@ a,
     justify-items: space-around;
     align-items: center;
   }
-  .movie__box {
-    flex-direction: row;
-    text-align: left;
-    gap: 1.5rem;
-  }
-  .videotype__top,
-  .videotype__bottom {
-    display: flex;
-    width: 90%;
-  }
-  .videotype__top {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
+
   .videotype__bottom {
     flex-direction: row;
     justify-content: space-between;
@@ -234,18 +270,7 @@ a,
     top: 1rem;
     z-index: -1;
   }
-  .aboutus__1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .aboutus__1 > .aboutus__title {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    text-align: center;
-  }
+
   .aboutus__title p {
     font-size: 1.25rem;
     line-height: 36px;
@@ -255,7 +280,7 @@ a,
     content: "";
     position: absolute;
     top: 5rem;
-    width: 1292px;
+    width: 100%;
     height: 53px;
     background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
     filter: blur(100px);
@@ -271,8 +296,7 @@ a,
     justify-content: center;
     align-items: center;
   }
-  .aboutus__top,
-  .videotype__bottom {
+  .aboutus__top {
     display: flex;
     width: 54%;
   }

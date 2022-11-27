@@ -181,8 +181,8 @@ const Discover = () => {
                 </div>
             </article>
             <section className="row__custom__3">
-                <article className="movie__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                <article className="discover__box col-sm-12 col-md-12 col-xl-12">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -193,7 +193,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -204,7 +204,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -215,7 +215,51 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
+                    </div>
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
+                    </div>
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
+                    </div>
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
+                    </div>
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -227,54 +271,32 @@ const Discover = () => {
                         </div>
                     </div>
                 </article>
-                <article className="movie__box col-sm-12 col-md-12 col-xl-12 pb-sm-3 pb-xl-5">
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                </article>
-                <button className="btn__custom btn__contact" type="button">Load More</button>
+                {/* <article className="discover__box col-sm-12 col-md-12 col-xl-12">
+                </article> */}
+                <button className="btn__custom btn__contact mt-sm-3 mt-xl-5" type="button">Load More</button>
             </section>
+        </section>
+    );
+};
+const Clients = () => {
+    const aboutusImg = {
+        "1": icon_1
+    };
+    return (
+        <section className="row row__margin__bottom row__custom__2 ">
+            <article className="client__1 col-sm-12 col-md-12 col-xl-12">
+                <div className="client_title">
+                    <h2>Our Clients</h2>
+                </div>
+            </article>
+            <article className="aboutus__box col-sm-12 col-md-12 col-xl-12 position-relative">
+                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
+                    <div className="aboutus__top">
+                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <h5>Dua Pilar Satu Atap</h5>
+                    </div>
+                </div>
+            </article>
         </section>
     );
 };
@@ -293,6 +315,7 @@ const Home = () => {
                 <BehindScene />
                 <AboutUs />
                 <Discover />
+                <Clients />
             </main>
         </motion.div>
     );
