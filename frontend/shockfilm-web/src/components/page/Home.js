@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
@@ -10,6 +10,7 @@ import location from '../../assets/contactus/location.png';
 import globe from '../../assets/contactus/globe.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
+import InputContact from '../ui/InputContact';
 const HeroSlider = () => {
     return (
         <section id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
@@ -342,21 +343,45 @@ const ContactUs = () => {
                     </div>
                     <form className="form__contact__box" >
                         <div className="form__contact">
-                            <div class="position-relative mb-3">
-                                <label htmlFor="name" className="form-label label__custom label__custom__on">Name</label>
-                                <input type="text" className="form-control form__control__custom" id="name" aria-describedby="emailHelp" />
+                            <InputContact
+                                type="text"
+                                typeName="Name"
+                                typeId="name"
+                                htmlFor="name"
+                                ariaDescribe="nameHelp"
+                            />
+                            {/* <Input
+                                type="email"
+                                typeName="Email"
+                                typeId="email"
+                                htmlFor="email"
+                                ariaDescribe="emailHelp"
+                            />
+                            <Input
+                                type="password"
+                                typeName="Password"
+                                typeId="exampleInputPassword1"
+                                htmlFor="exampleInputPassword1"
+                                ariaDescribe="passwordHelp"
+                            />
+                            <Input
+                                type="text"
+                                typeName="Message"
+                                typeId="message"
+                                htmlFor="message"
+                                ariaDescribe="messageHelp"
+                            /> */}
+                            <div className="position-relative mb-3">
+                                <label htmlFor="email" className="form-label label__custom">Email</label>
+                                <input type="email" className="form-control form__contactus form__control__custom" id="email" aria-describedby="emailHelp" />
                             </div>
                             <div className="position-relative mb-3">
-                                <label htmlFor="email" className="form-label label__custom label__custom__on">Email</label>
-                                <input type="email" className="form-control form__control__custom" id="email" aria-describedby="emailHelp" />
+                                <label htmlFor="exampleInputPassword1" className="form-label label__custom">Password</label>
+                                <input type="password" className="form-control form__contactus form__control__custom" id="exampleInputPassword1" />
                             </div>
                             <div className="position-relative mb-3">
-                                <label htmlFor="exampleInputPassword1" className="form-label label__custom label__custom__on">Password</label>
-                                <input type="password" className="form-control form__control__custom" id="exampleInputPassword1" />
-                            </div>
-                            <div className="position-relative mb-3">
-                                <label htmlFor="message" className="form-label label__custom label__custom__on">Message</label>
-                                <input type="text" className="form-control form__control__custom" id="message" />
+                                <label htmlFor="message" className="form-label label__custom">Message</label>
+                                <input type="text" className="form-control form__contactus form__control__custom" id="message" />
                             </div>
                         </div>
                         <button type="submit" className="btn btn__submit__contact">Submit</button>
