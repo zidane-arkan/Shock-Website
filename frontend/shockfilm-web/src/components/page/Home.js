@@ -300,6 +300,29 @@ const Clients = () => {
         </section>
     );
 };
+const ContactUs = () => {
+    return (
+        <section className="row row__margin__bottom ">
+            <article className="client__1 col-sm-12 col-md-12 col-xl-12">
+                <div className="client_title">
+                    <h2>Having Project in mind?</h2>
+                </div>
+            </article>
+            <article className="behind__1 col-sm-12 col-md-3 col-xl-4">
+                <div className="behind__title">
+                    <h2>Men behind the scenes.</h2>
+                </div>
+                <div className="behind__text">
+                    <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
+                    <button className="btn__custom btn__started" type="button">See More</button>
+                </div>
+            </article>
+            <article className="behind__2 col-sm-12 col-md-8 col-xl-8">
+                <img src={man} alt="Man Behind the scenes" width="80%" />
+            </article>
+        </section>
+    );
+};
 const Home = () => {
     return (
         <motion.div
@@ -316,6 +339,7 @@ const Home = () => {
                 <AboutUs />
                 <Discover />
                 <Clients />
+                <ContactUs />
             </main>
         </motion.div>
     );
