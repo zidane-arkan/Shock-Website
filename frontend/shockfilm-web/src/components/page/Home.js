@@ -1,10 +1,13 @@
-import React from 'react';
+import React,{useState} from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
 import movie_1 from '../../assets/movie/movie-1.png';
 import icon_1 from '../../assets/aboutus/1.png';
 import man from '../../assets/movie/man.png';
+import phone from '../../assets/contactus/phone.png';
+import location from '../../assets/contactus/location.png';
+import globe from '../../assets/contactus/globe.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 const HeroSlider = () => {
@@ -302,24 +305,64 @@ const Clients = () => {
 };
 const ContactUs = () => {
     return (
-        <section className="row row__margin__bottom ">
-            <article className="client__1 col-sm-12 col-md-12 col-xl-12">
-                <div className="client_title">
+        <section className="row row__custom__4 row__margin__bottom ">
+            <article className="contactus__1 col-sm-12 col-md-12 col-xl-12">
+                <div className="contactus__title">
                     <h2>Having Project in mind?</h2>
                 </div>
             </article>
-            <article className="behind__1 col-sm-12 col-md-3 col-xl-4">
-                <div className="behind__title">
-                    <h2>Men behind the scenes.</h2>
-                </div>
-                <div className="behind__text">
-                    <p>Use the web clipper extension, available on Chrome and Firefox, to save web pages or take screenshots as notes.</p>
-                    <button className="btn__custom btn__started" type="button">See More</button>
-                </div>
-            </article>
-            <article className="behind__2 col-sm-12 col-md-8 col-xl-8">
-                <img src={man} alt="Man Behind the scenes" width="80%" />
-            </article>
+            <section className="row row__custom__5">
+                <article className="contactus__2 col-sm-12 col-md-3 col-xl-4">
+                    <section className="contactus__2__box">
+                        <div className="contactus__text">
+                            <img src={phone} alt="Phone" />
+                            <h4>Call us</h4>
+                        </div>
+                        <p>+62 8555 555 555</p>
+                    </section>
+                    <section className="contactus__2__box">
+                        <div className="contactus__text">
+                            <img src={location} alt="Phone" />
+                            <h4>Location</h4>
+                        </div>
+                        <p>Palembang, Indonesia</p>
+                    </section>
+                    <section className="contactus__2__box">
+                        <div className="contactus__text">
+                            <img src={globe} alt="Phone" />
+                            <h4>Mail us</h4>
+                        </div>
+                        <p>shockfilm@gmail.com</p>
+                    </section>
+                </article>
+                <article className="contactus__3 col-sm-12 col-md-8 col-xl-8">
+                    <div className="contactus__title">
+                        <h2>Contact Now</h2>
+                        <p>In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.</p>
+                    </div>
+                    <form className="form__contact__box" >
+                        <div className="form__contact">
+                            <div class="position-relative mb-3">
+                                <label htmlFor="name" className="form-label label__custom label__custom__on">Name</label>
+                                <input type="text" className="form-control form__control__custom" id="name" aria-describedby="emailHelp" />
+                            </div>
+                            <div className="position-relative mb-3">
+                                <label htmlFor="email" className="form-label label__custom label__custom__on">Email</label>
+                                <input type="email" className="form-control form__control__custom" id="email" aria-describedby="emailHelp" />
+                            </div>
+                            <div className="position-relative mb-3">
+                                <label htmlFor="exampleInputPassword1" className="form-label label__custom label__custom__on">Password</label>
+                                <input type="password" className="form-control form__control__custom" id="exampleInputPassword1" />
+                            </div>
+                            <div className="position-relative mb-3">
+                                <label htmlFor="message" className="form-label label__custom label__custom__on">Message</label>
+                                <input type="text" className="form-control form__control__custom" id="message" />
+                            </div>
+                        </div>
+                        <button type="submit" className="btn btn__submit__contact">Submit</button>
+                    </form>
+                </article>
+            </section>
         </section>
     );
 };
