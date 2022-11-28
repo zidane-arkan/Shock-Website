@@ -350,39 +350,40 @@ const ContactUs = () => {
                                 htmlFor="name"
                                 ariaDescribe="nameHelp"
                             />
-                            {/* <Input
+                            <InputContact
                                 type="email"
                                 typeName="Email"
                                 typeId="email"
                                 htmlFor="email"
                                 ariaDescribe="emailHelp"
                             />
-                            <Input
+                            <InputContact
                                 type="password"
                                 typeName="Password"
                                 typeId="exampleInputPassword1"
                                 htmlFor="exampleInputPassword1"
                                 ariaDescribe="passwordHelp"
                             />
-                            <Input
+                            <InputContact
                                 type="text"
                                 typeName="Message"
                                 typeId="message"
                                 htmlFor="message"
                                 ariaDescribe="messageHelp"
-                            /> */}
-                            <div className="position-relative mb-3">
+                            />
+                            {/* <div className="position-relative mb-3">
+                                <label htmlFor="exampleInputPassword1" className="form-label label__custom">Password</label>
+                                <input type="password" className="form-control form__contactus form__control__custom" id="exampleInputPassword1" />
+                            </div> */}
+                            {/* <div className="position-relative mb-3">
                                 <label htmlFor="email" className="form-label label__custom">Email</label>
                                 <input type="email" className="form-control form__contactus form__control__custom" id="email" aria-describedby="emailHelp" />
                             </div>
-                            <div className="position-relative mb-3">
-                                <label htmlFor="exampleInputPassword1" className="form-label label__custom">Password</label>
-                                <input type="password" className="form-control form__contactus form__control__custom" id="exampleInputPassword1" />
-                            </div>
+                            
                             <div className="position-relative mb-3">
                                 <label htmlFor="message" className="form-label label__custom">Message</label>
                                 <input type="text" className="form-control form__contactus form__control__custom" id="message" />
-                            </div>
+                            </div> */}
                         </div>
                         <button type="submit" className="btn btn__submit__contact">Submit</button>
                     </form>

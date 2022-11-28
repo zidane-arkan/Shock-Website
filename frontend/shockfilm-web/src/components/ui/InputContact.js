@@ -19,21 +19,20 @@ const InputContact = ({ type, typeName, typeId, htmlfor, ariaDescribe }) => {
     return (
         <div className="position-relative mb-3">
             <label
-                htmlFor="name"
+                htmlFor={htmlfor}
                 className="form-label label__custom "
                 style={isFocus ? top.focus : top.blur}
             >
-                Name
+                {typeName}
             </label>
             <input
                 onBlur={changePosition}
                 onClick={changePosition}
                 ref={refData}
                 // onBlur={changePosition}
-                type="text"
+                type={type}
                 className="form-control form__contactus form__control__custom"
-                id="name"
-                defaultValue=""
+                id={typeId}
             />
         </div>
     );
