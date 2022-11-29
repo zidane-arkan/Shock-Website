@@ -1,5 +1,7 @@
 import React from 'react';
 import footerLogo from '../../assets/logo/footerLogo.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const Footer = () => {
     const data = 's';
     return (
@@ -74,15 +76,17 @@ const Footer = () => {
                         <div className="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
                             <a
                                 href="gta"
-                                className="text-white btn btn-outline-light btn-floating m-1"
+                                className="me-3 me-xl-4"
                                 role="button"
-                            ><i className="fab fa-facebook-f"></i>
+                            >
+                                <FontAwesomeIcon icon="fa-brands fa-instagram" size="2xl" />
                             </a>
                             <a
                                 href="gta"
-                                className="text-white btn btn-outline-light btn-floating m-1"
+                                className=""
                                 role="button"
-                            ><i className="fab fa-instagram"></i>
+                            >
+                                <FontAwesomeIcon icon="fa-brands fa-linkedin" size="2xl" />
                             </a>
                         </div>
                     </div>
