@@ -14,8 +14,8 @@ const Footer = () => {
                             </p>
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-2">
-                            <h6 className=" mb-4 font-weight-bold">Artworks</h6>
-                            <div>
+                            <h6 className="mb-3 mb-xl-3 font-weight-bold">Artworks</h6>
+                            <div className="footer__links">
                                 <p>
                                     <a href="gta.com" className="text-white">Popular Works</a>
                                 </p>
@@ -31,8 +31,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mt-2">
-                            <h6 className=" mb-4 font-weight-bold">Blog</h6>
-                            <div>
+                            <h6 className=" mb-3 mb-xl-3 font-weight-bold">Blog</h6>
+                            <div className="footer__links">
                                 <p>
                                     <a href="gta" className="text-white">Latest News</a>
                                 </p>
@@ -45,8 +45,8 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-md-4 col-lg-3 col-xl-2 mx-auto mt-2">
-                            <h6 className=" mb-4 font-weight-bold">Profile</h6>
-                            <div>
+                            <h6 className="mb-3 mb-xl-3 font-weight-bold">Profile</h6>
+                            <div className="footer__links">
                                 <p>About us</p>
                                 <p>Careers</p>
                             </div>
