@@ -8,9 +8,11 @@ import man from '../../assets/movie/man.png';
 import phone from '../../assets/contactus/phone.png';
 import location from '../../assets/contactus/location.png';
 import globe from '../../assets/contactus/globe.png';
+import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import InputContact from '../ui/InputContact';
+
 const HeroSlider = () => {
     return (
         <section id="carouselExampleInterval" className="carousel slide" data-bs-ride="carousel">
@@ -287,17 +289,16 @@ const Clients = () => {
         "1": icon_1
     };
     return (
-        <section className="row row__margin__bottom row__custom__2 ">
+        <section className="row row__margin__bottom row__custom__0 ">
             <article className="client__1 col-sm-12 col-md-12 col-xl-12">
                 <div className="client_title">
                     <h2>Our Clients</h2>
                 </div>
             </article>
-            <article className="aboutus__box col-sm-12 col-md-12 col-xl-12 position-relative">
-                <div className="aboutus__item col-sm-3 col-md-3 col-xl-3">
-                    <div className="aboutus__top">
-                        <img src={aboutusImg[`${1}`]} alt="Movie-1" width="100%" />
-                        <h5>Dua Pilar Satu Atap</h5>
+            <article className="clients__box col-sm-12 col-md-12 col-xl-12 position-relative">
+                <div className="clients__item col-sm-3 col-md-12 col-xl-12">
+                    <div className="clients__top">
+                        <img src={clientList} alt="Movie-1" width="100%" />
                     </div>
                 </div>
             </article>
@@ -408,7 +409,7 @@ const Home = () => {
                 <AboutUs />
                 <Discover />
                 <Clients />
-                <ContactUs />
+                {/* <ContactUs /> */}
             </main>
         </motion.div>
     );

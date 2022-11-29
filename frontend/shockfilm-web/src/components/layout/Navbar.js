@@ -28,7 +28,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <form className="form-inline">
-                <button className="btn btn-outline-success" type="button">Contact Us</button>
+                <button className="btn btn-outline-light" type="button">Contact Us</button>
             </form>
         </nav>
     );

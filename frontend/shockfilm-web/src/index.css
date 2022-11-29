@@ -13,6 +13,10 @@ a,
 .nav-link {
   color: #fafafa !important;
 }
+
+.pt__custom {
+  padding-top: 8%;
+}
 .nav__link__custom {
   font-size: 1.5rem;
 }
@@ -116,6 +120,7 @@ input[type="number"]:hover {
   border-radius: 16px;
   border: 0;
 }
+
 @media screen and (min-width: 1800px) {
   .btn__submit__contact {
     font-size: 1.125rem;
@@ -125,6 +130,9 @@ input[type="number"]:hover {
   }
   .row__custom {
     margin-top: 3rem;
+  }
+  .row__custom__0 {
+    gap: 0;
   }
   .row__custom__1 {
     gap: 2.5rem;
@@ -144,7 +152,7 @@ input[type="number"]:hover {
     gap: 3.5rem;
     align-items: center;
   }
-  .row__custom__5{
+  .row__custom__5 {
     justify-content: space-between;
   }
   .behind__1,
@@ -283,6 +291,8 @@ input[type="number"]:hover {
   }
   h5,
   h4 {
+    font-size: 1.75rem;
+    line-height: 24px;
     margin: 0 !important;
     font-weight: 500;
   }
@@ -346,7 +356,8 @@ input[type="number"]:hover {
     height: 60px;
   }
   .heading__bottom .btn__started,
-  .behind__text .btn__started {
+  .behind__text .btn__started,
+  .footer__top .btn__started {
     border: 0;
     background: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
   }
@@ -430,8 +441,6 @@ input[type="number"]:hover {
   .aboutus__top {
     display: flex;
     width: 54%;
-  }
-  .aboutus__top {
     text-align: center;
     justify-content: center;
     flex-direction: column;
@@ -443,4 +452,66 @@ input[type="number"]:hover {
     font-size: 1.125rem;
     line-height: 24px;
   }
+  /*Our Clients CSS*/
+  .clients__box {
+    display: flex;
+    align-items: baseline;
+  }
+  .clients__box .clients__item {
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .clients__top {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
+
+/*FOOTER CSS*/
+footer {
+  padding: 0 3rem !important;
+}
+footer a {
+  text-decoration: none;
+}
+.footer__top h6{
+  font-size: 1.5rem;
+}
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__top {
+  align-items: flex-start;
+  justify-content: space-around;
+}
+.footer__top .footer__project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.footer__project .btn__custom {
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: normal;
+  width: 152px;
+  height: 49px;
+  padding: 12px 24px;
+  gap: 10px;
+}
+.footer__top__start {
+  display: flex;
+  gap: 1.75rem;
+  flex-direction: column;
+  width: 15%;
+  margin-right: 4rem;
+}
+/* END FOOTER CSS */
