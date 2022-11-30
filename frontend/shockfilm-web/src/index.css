@@ -11,9 +11,24 @@ ul,
 li,
 a,
 .nav-link {
-  color: #fafafa !important;
+  color: #fafafa;
 }
 
+a:hover,
+.nav-link:hover,
+.navbar-nav .active {
+  font-weight: 600;
+  background-image: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+.nav-link:hover,
+.navbar-nav .active {
+  border-bottom: 1px solid #9b51e0;
+}
 .pt__custom {
   padding-top: 8%;
 }
@@ -480,7 +495,7 @@ footer {
 footer a {
   text-decoration: none;
 }
-.footer__top h6{
+.footer__top h6 {
   font-size: 1.5rem;
 }
 .footer__box {
@@ -514,7 +529,7 @@ footer a {
   width: 15%;
   margin-right: 4rem;
 }
-.footer__links{
+.footer__links {
   display: flex;
   flex-direction: column;
   gap: 1rem;
