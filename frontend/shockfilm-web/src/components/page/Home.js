@@ -69,7 +69,17 @@ const PopularWorks = () => {
             <article className="movie__box col-sm-12 col-md-12 col-xl-12">
                 <div className="movie__item col-sm-6 col-md-6 col-xl-3">
                     <div className="videotype__top">
-                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                        <div className="videotype__img">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <div class="gallery-links d-flex align-items-center justify-content-center">
+                                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link">
+                                    Link Video
+                                </a>
+                                <a href="gallery-single.html" class="details-link">
+                                    Link Detail
+                                </a>
+                            </div>
+                        </div>
                         <h5>Dua Pilar Satu Atap</h5>
                         <span className="line"></span>
                     </div>

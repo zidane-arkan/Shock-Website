@@ -12,6 +12,7 @@ li,
 a,
 .nav-link {
   color: #fafafa;
+  transition: all ease-in-out 0.6s;
 }
 
 a:hover,
@@ -42,6 +43,9 @@ a:hover,
 }
 .row__center {
   align-items: center;
+}
+.nav-item {
+  transition: all ease-in-out 0.6s;
 }
 .nav-item a {
   text-transform: uppercase !important;
@@ -263,6 +267,7 @@ input[type="number"]:hover {
     width: 85%;
     flex-direction: column;
     gap: 1.5rem;
+    transition: all 0.5s;
   }
   .movie__box,
   .discover__box {
@@ -535,3 +540,20 @@ footer a {
   gap: 1rem;
 }
 /* END FOOTER CSS */
+
+/*HOVER EFFECT CSS*/
+.videotype__img .gallery-links {
+    position: absolute;
+    border-radius: 12px;
+    inset: 0;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 3;
+}
+.movie__item .videotype__img:hover .gallery-links {
+    opacity: 1;
+}
+.videotype__top .videotype__img {
+  position: relative;
+}
