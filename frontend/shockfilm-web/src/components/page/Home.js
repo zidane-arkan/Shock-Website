@@ -12,6 +12,7 @@ import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import InputContact from '../ui/InputContact';
+import VideoModel from '../layout/VideoModel';
 
 const HeroSlider = () => {
     return (
@@ -57,72 +58,89 @@ const HeroHeading = () => {
     );
 };
 const PopularWorks = () => {
+    const [isBackdrop, setIsBackdrop] = useState(false);
+    const backdropHandler = (e) => {
+        setIsBackdrop((newValue) => {
+            document.body.style.overflow = 'unset';
+            return !newValue;
+        });
+
+    };
+    useEffect(() => {
+        if (isBackdrop) {
+            document.body.style.overflow = 'hidden';
+        }
+    }, [isBackdrop]);
     const movieImg = {
         "1": movie_1
     };
     return (
-        <section className="row row__margin__bottom row__custom__1">
-            <article className="popular__heading col-md-12 col-xl-12">
-                <h2>Our popular works</h2>
-                <Link className="nav-link nav__link__custom">View all</Link>
-            </article>
-            <article className="movie__box col-sm-12 col-md-12 col-xl-12">
-                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                    <div className="videotype__top">
-                        <div className="videotype__img">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <div class="gallery-links d-flex align-items-center justify-content-center">
-                                <a href="assets/img/gallery/gallery-2.jpg" title="Gallery 2" class="glightbox preview-link">
-                                    Link Video
-                                </a>
-                                <a href="gallery-single.html" class="details-link">
-                                    Link Detail
-                                </a>
+        <>
+            <section className="row row__margin__bottom row__custom__1">
+                {isBackdrop ? <VideoModel isBackdrop={isBackdrop} backdropHandler={backdropHandler} /> : null}
+                <article className="popular__heading col-md-12 col-xl-12">
+                    <h2>Our popular works</h2>
+                    <Link className="nav-link nav__link__custom">View all</Link>
+                </article>
+                <article className="movie__box col-sm-12 col-md-12 col-xl-12">
+                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                        <div className="videotype__top">
+                            <div className="videotype__img">
+                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                                <div className="gallery-links d-flex align-items-center justify-content-center">
+                                    <button onClick={backdropHandler}>
+                                        Link Video
+                                    </button>
+                                    <a href="gallery-single.html" className="details-link">
+                                        Link Detail
+                                    </a>
+                                </div>
                             </div>
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
                         </div>
-                        <h5>Dua Pilar Satu Atap</h5>
-                        <span className="line"></span>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
                     </div>
-                    <div className="videotype__bottom">
-                        <p>Short Film</p>
-                        <button className="btn btn__see btn-outline-light">See</button>
+                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
                     </div>
-                </div>
-                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                    <div className="videotype__top">
-                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                        <h5>Dua Pilar Satu Atap</h5>
-                        <span className="line"></span>
+                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
                     </div>
-                    <div className="videotype__bottom">
-                        <p>Short Film</p>
-                        <button className="btn btn__see btn-outline-light">See</button>
+                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
+                        <div className="videotype__top">
+                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <h5>Dua Pilar Satu Atap</h5>
+                            <span className="line"></span>
+                        </div>
+                        <div className="videotype__bottom">
+                            <p>Short Film</p>
+                            <button className="btn btn__see btn-outline-light">See</button>
+                        </div>
                     </div>
-                </div>
-                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                    <div className="videotype__top">
-                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                        <h5>Dua Pilar Satu Atap</h5>
-                        <span className="line"></span>
-                    </div>
-                    <div className="videotype__bottom">
-                        <p>Short Film</p>
-                        <button className="btn btn__see btn-outline-light">See</button>
-                    </div>
-                </div>
-                <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                    <div className="videotype__top">
-                        <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                        <h5>Dua Pilar Satu Atap</h5>
-                        <span className="line"></span>
-                    </div>
-                    <div className="videotype__bottom">
-                        <p>Short Film</p>
-                        <button className="btn btn__see btn-outline-light">See</button>
-                    </div>
-                </div>
-            </article>
-        </section>
+                </article>
+            </section>
+        </>
+
     );
 };
 const BehindScene = () => {
