@@ -543,16 +543,16 @@ footer a {
 
 /*HOVER EFFECT CSS*/
 .videotype__img .gallery-links {
-    position: absolute;
-    border-radius: 12px;
-    inset: 0;
-    opacity: 0;
-    transition: all ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 3;
+  position: absolute;
+  border-radius: 12px;
+  inset: 0;
+  opacity: 0;
+  transition: all ease-in-out 0.3s;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 3;
 }
 .movie__item .videotype__img:hover .gallery-links {
-    opacity: 1;
+  opacity: 1;
 }
 .videotype__top .videotype__img {
   position: relative;
