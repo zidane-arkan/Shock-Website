@@ -2,11 +2,11 @@
 
 * {
   font-family: "Poppins", sans-serif !important;
-  color: #fafafa;
 }
 body {
   background-color: #1f1d2b !important;
   transition: all ease-in-out 0.3s;
+  color: #fafafa;
 }
 ul,
 li,
@@ -626,18 +626,40 @@ footer a {
 .videotype__img .gallery-links {
   display: flex;
   flex-direction: row;
-  gap: 1.5rem;
+  gap: 0.8rem;
   position: absolute;
   border-radius: 12px;
   inset: 0;
   opacity: 0;
-  transition: all ease-in-out 0.3s;
   background: rgba(0, 0, 0, 0.6);
   z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+.videotype__img {
+  overflow: hidden;
+  transition: all ease-in-out 0.3s;
+}
+.videotype__img img {
+  transition: all ease-in-out 0.3s;
 }
 .movie__item .videotype__img:hover .gallery-links {
+  border-radius: 30%;
   opacity: 1;
+  scale: 1.2;
 }
-.videotype__top .videotype__img {
+.movie__item .videotype__img:hover img {
+  border-radius: 30%;
+  scale: 1.2;
+}
+
+ .videotype__img {
   position: relative;
+}
+
+.fontAwesome__btn {
+  background: none !important;
+  border: 0 !important;
+}
+.fontAwesome__btn svg {
+  color: rgba(255, 255, 255, 0.5);
 }

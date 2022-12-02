@@ -13,6 +13,7 @@ import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import InputContact from '../ui/InputContact';
 import VideoModel from '../layout/VideoModel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeroSlider = () => {
     return (
@@ -59,6 +60,7 @@ const HeroHeading = () => {
 };
 const PopularWorks = () => {
     const [isBackdrop, setIsBackdrop] = useState(false);
+    const [embedId, setEmbedId] = useState('');
     const backdropHandler = (e) => {
         setIsBackdrop((newValue) => {
             document.body.style.overflow = 'unset';
@@ -77,7 +79,7 @@ const PopularWorks = () => {
     return (
         <>
             <section className="row row__margin__bottom row__custom__1">
-                {isBackdrop ? <VideoModel isBackdrop={isBackdrop} backdropHandler={backdropHandler} /> : null}
+                {isBackdrop ? <VideoModel embedId={'-5O3zy69GZM'} isBackdrop={isBackdrop} backdropHandler={backdropHandler} /> : null}
                 <article className="popular__heading col-md-12 col-xl-12">
                     <h2>Our popular works</h2>
                     <Link className="nav-link nav__link__custom">View all</Link>
@@ -88,12 +90,12 @@ const PopularWorks = () => {
                             <div className="videotype__img">
                                 <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                 <div className="gallery-links d-flex align-items-center justify-content-center">
-                                    <button onClick={backdropHandler}>
-                                        Link Video
+                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
+                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
                                     </button>
-                                    <a href="gallery-single.html" className="details-link">
-                                        Link Detail
-                                    </a>
+                                    <Link to='/' className='fontAwesome__btn'>
+                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
+                                    </Link>
                                 </div>
                             </div>
                             <h5>Dua Pilar Satu Atap</h5>
@@ -106,7 +108,17 @@ const PopularWorks = () => {
                     </div>
                     <div className="movie__item col-sm-6 col-md-6 col-xl-3">
                         <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <div className="videotype__img">
+                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                                <div className="gallery-links d-flex align-items-center justify-content-center">
+                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
+                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
+                                    </button>
+                                    <Link to='/' className='fontAwesome__btn'>
+                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
+                                    </Link>
+                                </div>
+                            </div>
                             <h5>Dua Pilar Satu Atap</h5>
                             <span className="line"></span>
                         </div>
@@ -117,7 +129,17 @@ const PopularWorks = () => {
                     </div>
                     <div className="movie__item col-sm-6 col-md-6 col-xl-3">
                         <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <div className="videotype__img">
+                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                                <div className="gallery-links d-flex align-items-center justify-content-center">
+                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
+                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
+                                    </button>
+                                    <Link to='/' className='fontAwesome__btn'>
+                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
+                                    </Link>
+                                </div>
+                            </div>
                             <h5>Dua Pilar Satu Atap</h5>
                             <span className="line"></span>
                         </div>
@@ -128,7 +150,17 @@ const PopularWorks = () => {
                     </div>
                     <div className="movie__item col-sm-6 col-md-6 col-xl-3">
                         <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                            <div className="videotype__img">
+                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
+                                <div className="gallery-links d-flex align-items-center justify-content-center">
+                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
+                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
+                                    </button>
+                                    <Link to='/' className='fontAwesome__btn'>
+                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
+                                    </Link>
+                                </div>
+                            </div>
                             <h5>Dua Pilar Satu Atap</h5>
                             <span className="line"></span>
                         </div>

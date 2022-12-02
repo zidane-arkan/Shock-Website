@@ -7,26 +7,16 @@ const Video = ({ embedId, isBackdrop, backdropHandler }) => {
         <>
             {
                 isBackdrop &&
-                <div onClick={backdropHandler} class="modal-video" tabindex="-1" role="dialog" aria-label="You just opened the modal video">
-                    <div class="modal-video-body">
-                        <div class="modal-video-inner" style={{ "width": "1733px" }}>
-                            <div class="modal-video-movie-wrap" style={{ "paddingBottom": "56.25%" }}>
-                                <button class="modal-video-close-btn" aria-label="Close the modal by clicking here"></button>
-                                <iframe width="460" height="230" src="//www.youtube.com/embed/L61p2uyiMSo?mute=1&amp;autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" tabindex="-1" __idm_id__="417793"></iframe>
+                <div onClick={backdropHandler} className="modal-video" tabindex="-1" role="dialog" aria-label="You just opened the modal video">
+                    <div className="modal-video-body">
+                        <div className="modal-video-inner" style={{ "width": "1733px" }}>
+                            <div className="modal-video-movie-wrap" style={{ "paddingBottom": "56.25%" }}>
+                                <button className="modal-video-close-btn" aria-label="Close the modal by clicking here"></button>
+                                <iframe width="460" height="230" src={`//www.youtube.com/embed/${embedId}?mute=0&amp;autoplay=1`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" tabindex="-1" __idm_id__="417793"></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
-            }
-        </>
-    );
-};
-const Backdrop = ({ embedId, isBackdrop, backdropHandler }) => {
-    return (
-        <>
-            {
-                isBackdrop &&
-                <section onClick={backdropHandler} className="backdrop"></section>
             }
         </>
     );
