@@ -1,37 +1,42 @@
 import React, { useState } from 'react';
-import ReactDom from 'react-dom';
+import { createPortal } from 'react-dom';
 
-const Video = ({ embedId, isBackdrop, backdropHandler }) => {
+const Video = ({ embedId }) => {
     let dummy = '_o5WVCCONsA';
+    return (
+            <div className="modal-video-body">
+                <div className="modal-video-inner" style={{ "width": "1733px" }}>
+                    <div className="modal-video-movie-wrap">
+                        <button className="modal-video-close-btn" aria-label="Close the modal by clicking here"></button>
+                        <iframe width="300" height="130" src={`//www.youtube.com/embed/${embedId}?mute=0&amp;autoplay=1`} frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="1" tabIndex="-1" __idm_id__="417793"></iframe>
+                    </div>
+                </div>
+            </div>
+    );
+};
+const Modals = ({ backdropHandler }) => {
     return (
         <>
             {
-                isBackdrop &&
-                <div onClick={backdropHandler} className="modal-video" tabindex="-1" role="dialog" aria-label="You just opened the modal video">
-                    <div className="modal-video-body">
-                        <div className="modal-video-inner" style={{ "width": "1733px" }}>
-                            <div className="modal-video-movie-wrap" style={{ "paddingBottom": "56.25%" }}>
-                                <button className="modal-video-close-btn" aria-label="Close the modal by clicking here"></button>
-                                <iframe width="460" height="230" src={`//www.youtube.com/embed/${embedId}?mute=0&amp;autoplay=1`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" tabindex="-1" __idm_id__="417793"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div onClick={backdropHandler} className="modal-video" tabIndex="-1" role="dialog" aria-label="You just opened the modal video" />
             }
         </>
     );
 };
-const VideoModel = ({ embedId, isBackdrop, backdropHandler }) => {
+const VideoModel = ({ embedId, backdropHandler }) => {
     return (
         <>
-            {ReactDom.createPortal(
-                <Video
-                    embedId={embedId}
-                    isBackdrop={isBackdrop}
+            {createPortal(
+                <Modals
                     backdropHandler={backdropHandler}
                 />, document.getElementById('video__modals'))
             }
-
+            {createPortal(
+                <Video
+                    embedId={embedId}
+                />,
+                document.getElementById('video__overlay')
+            )}
         </>
     );
 };

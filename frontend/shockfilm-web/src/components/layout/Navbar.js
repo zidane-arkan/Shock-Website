@@ -25,6 +25,9 @@ const Navbar = () => {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="ourprofile" >our profile</NavLink>
                     </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" to="contactus" >Contact Us</NavLink>
+                    </li>
                 </ul>
             </div>
             <form className="form-inline">
