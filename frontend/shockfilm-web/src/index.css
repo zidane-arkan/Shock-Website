@@ -2,6 +2,7 @@
 
 * {
   font-family: "Poppins", sans-serif !important;
+  box-sizing: border-box;
 }
 body {
   background-color: #1f1d2b !important;
@@ -142,6 +143,84 @@ input[type="number"]:hover {
 }
 
 @media screen and (min-width: 1800px) {
+  .portfolio__info h3 {
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+  .portfolio__info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+  }
+  .portfolio__info ul li {
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+  .portfolio__info .btn__started {
+    border-radius: 12px;
+    text-decoration: none;
+    color: #fafafa;
+    border: 0;
+    background: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+  }
+  .portfolio__info .btn__custom {
+    width: 50%;
+    font-size: 1rem;
+    line-height: 36px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding: 12px 24px;
+    text-align: center;
+  }
+  .testimonial__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: relative;
+    padding: 1.875rem 1.875rem 6rem 1.875rem;
+    background: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+    height: 100%;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+  .testimonial__box {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: absolute;
+    top: 6rem;
+    align-items: center;
+  }
+  .testimonial__box div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .testimonial__box .testimonial__profile {
+    width: 110px;
+    border-radius: 50%;
+    border: 6px solid #2e3133;
+  }
+  .testimonial__box h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .testimonial__box h4 {
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .testimonial__items p {
+    font-style: italic;
+    font-weight: 400;
+  }
+  .works__1 .behind__title h2 {
+    font-size: 2rem;
+  }
   .btn__submit__contact {
     font-size: 1.125rem;
     padding: 12px 24px;
@@ -169,6 +248,8 @@ input[type="number"]:hover {
     align-items: center;
   }
   .row__custom__4 {
+    display: flex;
+    flex-direction: column;
     margin-top: 9rem;
     gap: 3.5rem;
     align-items: center;
@@ -176,8 +257,12 @@ input[type="number"]:hover {
   .row__custom__5 {
     justify-content: space-between;
   }
+  .row__custom__baseline {
+    align-items: baseline;
+  }
   .behind__1,
-  .contactus__2 {
+  .contactus__2,
+  .works__1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -202,6 +287,9 @@ input[type="number"]:hover {
     display: flex;
     justify-content: flex-end;
   }
+  .works__2 {
+    justify-content: flex-start;
+  }
   .contactus__3 {
     flex-direction: column;
     justify-content: flex-start;
@@ -215,6 +303,9 @@ input[type="number"]:hover {
     display: flex;
     flex-direction: column;
     gap: 3.75rem;
+  }
+  .works__1 .behind__text {
+    gap: 1.5rem;
   }
   .contactus__text {
     align-items: flex-end;
@@ -319,6 +410,10 @@ input[type="number"]:hover {
     margin: 0 !important;
     font-weight: 500;
   }
+  h3 {
+    font-weight: 500;
+    margin: 0 !important;
+  }
   h4 {
     font-size: 2rem;
   }
@@ -337,6 +432,9 @@ input[type="number"]:hover {
     line-height: 36px;
     letter-spacing: 0.5px;
   }
+  .detail__heading .heading__middle p {
+    line-height: 26px;
+  }
   .heading__bottom {
     font-size: 1.5rem;
   }
@@ -349,9 +447,10 @@ input[type="number"]:hover {
     gap: 2rem;
   }
 
-  .hero__heading {
-    top: 8%;
+  .hero__heading,
+  .detail__heading {
     display: flex;
+    top: 8%;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
@@ -360,10 +459,19 @@ input[type="number"]:hover {
     justify-content: center;
     transform: translateY(-50%);
   }
+  .detail__heading {
+    transform: translateY(0);
+  }
   .hero__heading > .heading__top,
-  .hero__heading > .heading__middle {
+  .hero__heading > .heading__middle,
+  .detail__heading > .heading__top,
+  .detail__heading > .heading__middle {
     display: inline-block;
     width: 22%;
+  }
+  .detail__heading > .heading__top,
+  .detail__heading > .heading__middle {
+    width: 40%;
   }
   .heading__bottom {
     display: flex;
@@ -377,6 +485,12 @@ input[type="number"]:hover {
     padding: 12px 24px;
     width: 218px;
     height: 60px;
+  }
+  .detail__heading .heading__bottom .btn__custom {
+    font-size: 1.25rem;
+    padding: 7px 40px;
+    width: 266px;
+    height: 50px;
   }
   .heading__bottom .btn__started,
   .behind__text .btn__started,

@@ -6,7 +6,7 @@ import Blog from '../page/Blog';
 import OurProfile from '../page/OurProfile';
 import Portfolio from '../page/Portfolio';
 import ContactUs from '../page/ContactUs';
-
+import Works from '../page/detail/Works';
 const AnimatedRoutes = () => {
     const location = useLocation();
     return (
@@ -17,6 +17,7 @@ const AnimatedRoutes = () => {
                 <Route path='blog' element={<Blog />} />
                 <Route path='ourprofile' element={<OurProfile />} />
                 <Route path='contactus' element={<ContactUs />} />
+                <Route path='works' element={<Works />} />
             </Routes>
         </AnimatePresence>
     );

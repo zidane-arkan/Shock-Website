@@ -3,7 +3,9 @@ import InputContact from '../ui/InputContact';
 import phone from '../../assets/contactus/phone.png';
 import location from '../../assets/contactus/location.png';
 import globe from '../../assets/contactus/globe.png';
-function ContactUs() {
+
+
+const ContactUs = () => {
     return (
         <section className="row__custom">
             <section className="row row__custom__4 row__margin__bottom ">
@@ -92,6 +94,6 @@ function ContactUs() {
             </section>
         </section>
     );
-}
+};
 
 export default ContactUs;
