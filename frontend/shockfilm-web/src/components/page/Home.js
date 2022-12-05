@@ -246,7 +246,7 @@ const Discover = () => {
             </article>
             <section className="row__custom__3">
                 <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -257,7 +257,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -268,7 +268,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -279,7 +279,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -290,7 +290,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -301,7 +301,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -312,7 +312,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>
@@ -323,7 +323,7 @@ const Discover = () => {
                             <button className="btn btn__see btn-outline-light">See</button>
                         </div>
                     </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                         <div className="videotype__top">
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                             <h5>Dua Pilar Satu Atap</h5>

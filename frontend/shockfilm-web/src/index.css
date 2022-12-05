@@ -43,6 +43,11 @@ a:hover,
   padding: 0.1px;
   background-color: #c4c4c4;
 }
+.blog__line .line {
+  display: flex;
+  width: 1%;
+  height: 55vh;
+}
 .row__center {
   align-items: center;
 }
@@ -142,6 +147,10 @@ input[type="number"]:hover {
   border: 0;
 }
 
+.col__line__custom {
+  width: 1%;
+}
+
 @media screen and (min-width: 1800px) {
   .portfolio__info h3 {
     position: relative;
@@ -171,7 +180,7 @@ input[type="number"]:hover {
   .portfolio__info .btn__custom {
     width: 50%;
     height: 50px;
-    font-size: .8rem;
+    font-size: 0.8rem;
     line-height: 26px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -257,6 +266,9 @@ input[type="number"]:hover {
   }
   .row__custom__5 {
     justify-content: space-between;
+  }
+  .row__custom__bottom {
+    padding-bottom: 8rem;
   }
   .row__custom__baseline {
     align-items: baseline;
@@ -350,18 +362,42 @@ input[type="number"]:hover {
     color: #a7a7a7;
   }
   .movie__item,
-  .discover__item {
+  .discover__item,
+  .blog__item {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
   .videotype__top,
-  .videotype__bottom {
+  .videotype__bottom,
+  .bloglatest__top {
     display: flex;
     width: 85%;
     flex-direction: column;
     gap: 1.5rem;
-    transition: all 0.5s;
+    transition: all ease-in-out 0.5s;
+  }
+  .bloglatest__top {
+    width: 100%;
+  }
+  .bloglatest__top div {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .bloglatest__top div h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 32px;
+  }
+  .bloglatest__wrap {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
   }
   .movie__box,
   .discover__box {
@@ -373,11 +409,17 @@ input[type="number"]:hover {
     justify-content: space-between;
   }
   .discover__item .videotype__top,
-  .discover__item .videotype__bottom {
+  .discover__item .videotype__bottom,
+  .blog__item .bloglatest__top,
+  .blog__item .videotype__bottom {
     width: 100%;
   }
-  .col__xl__custom {
+
+  .col__xl__custom__4 {
     width: 23%;
+  }
+  .col__xl__custom__3 {
+    width: 30%;
   }
 
   .btn__custom {
@@ -426,6 +468,23 @@ input[type="number"]:hover {
     align-items: center;
     flex-direction: column;
     gap: 1.5rem;
+  }
+  .blog__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .blog__heading .flex__custom {
+    height: 60vh;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .blog__item .bloglatest__top h5 {
+    font-size: 3rem;
+    line-height: 60px;
   }
   .heading__middle p {
     font-size: 1rem;
@@ -735,7 +794,7 @@ footer a {
     height: 0;
   }
 }
-/*HOVER EFFECT CSS*/
+/*VIDEO MODEL CSS*/
 .videotype__img .gallery-links {
   display: flex;
   flex-direction: row;

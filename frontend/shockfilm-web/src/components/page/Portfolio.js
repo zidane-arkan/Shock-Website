@@ -15,15 +15,10 @@ const Portfolio = () => {
         >
             <article className="row__custom">
                 <section className="row row__margin__bottom row__custom__1">
-                    {/* <article className="popular__heading col-md-12 col-xl-12">
-                        <h2>Discover</h2>
-                        <div className="flex__custom">
-                            <Link className="nav-link nav__link__custom">View all</Link>
-                        </div>
-                    </article> */}
+                    
                     <section className="row__custom__3">
                         <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -34,7 +29,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -45,7 +40,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -56,7 +51,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -67,7 +62,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -78,7 +73,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -89,7 +84,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -100,7 +95,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -111,7 +106,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -122,7 +117,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -133,7 +128,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
@@ -144,7 +139,7 @@ const Portfolio = () => {
                                     <button className="btn btn__see btn-outline-light">See</button>
                                 </div>
                             </div>
-                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom">
+                            <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
                                 <div className="videotype__top">
                                     <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
                                     <h5>Dua Pilar Satu Atap</h5>
