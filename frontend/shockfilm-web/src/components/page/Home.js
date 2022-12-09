@@ -461,6 +461,7 @@ const Home = () => {
         >
             <HeroSlider />
             <HeroHeading />
+            
             <main className="row__custom">
                 <PopularWorks />
                 <BehindScene />
