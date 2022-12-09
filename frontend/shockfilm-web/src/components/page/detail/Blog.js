@@ -1,8 +1,5 @@
 import React from 'react';
-import img1 from '../../../assets/heroSlider/img-1.png';
-import img2 from '../../../assets/heroSlider/img-2.png';
-import img3 from '../../../assets/heroSlider/img-3.png';
-import user1 from '../../../assets/testimonial/user1.png';
+import imgheading1 from '../../../assets/detailblog/imgheading1.png';
 import { motion } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
@@ -24,17 +21,27 @@ const TopContent = () => {
         </article>
     );
 };
+const ImgContent = () => {
+    return (
+        <section className="image__heading">
+            <img src={imgheading1} className="w-100" alt="img__heading"/>
+        </section>
+    );
+};
 const Blog = () => {
     return (
         <motion.section
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="row__custom row__custom__4 row__margin__bottom "
+            className="col-md-12 position-relative px-0 py-0"
         >
-            <TopContent />
+            <ImgContent />
+            <section className="row__custom row__custom__4 row__margin__bottom ">
+                <TopContent />
+            </section>
         </motion.section>
     );
 };
 
-export default Blog;
+export { Blog };
