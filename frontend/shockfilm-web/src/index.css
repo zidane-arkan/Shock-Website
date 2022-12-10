@@ -35,6 +35,12 @@ a:hover,
 .pt__custom {
   padding-top: 8%;
 }
+.pt__custom_1{
+  padding-top: 1rem;
+}
+.pl__custom__1{
+  padding-left: 1rem;
+}
 .nav__link__custom {
   font-size: 1.5rem;
 }
@@ -153,7 +159,34 @@ input[type="number"]:hover {
 
 /*SIZE 1800PX >*/
 @media screen and (min-width: 1800px) {
-  .img__profile{
+  .author__blog__box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: 500;
+  }
+   .author__blog__box p{
+    font-weight: 500;
+   }
+  .author__profile{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    gap: .8rem;
+    align-items: center;
+  }
+  .author__profile img{
+    border: 2px solid #dddddd;
+    border-radius: 50%;
+    width: 2.25rem;
+  }
+  .img__profile {
+    height: 100%;
+  }
+  .image__heading__cover {
+    object-fit: cover;
+  }
+  .image__heading img{
     height: 100%;
   }
   .portfolio__info h3 {
@@ -245,6 +278,10 @@ input[type="number"]:hover {
     width: 218px;
     height: 60px;
   }
+  .row__detail__blog{
+    width: 60%;
+    margin: auto auto;
+  }
   .row__custom {
     margin-top: 3rem;
   }
@@ -274,6 +311,9 @@ input[type="number"]:hover {
   }
   .row__custom__5 {
     justify-content: space-between;
+  }
+  .row__custom__6 {
+    padding: 1.5rem 15rem;
   }
   .row__custom__bottom {
     padding-bottom: 8rem;
@@ -509,7 +549,7 @@ input[type="number"]:hover {
 
   .navbar__header,
   .row__custom {
-    padding: 1.5rem 10rem !important ;
+    padding: 1.5rem 10rem;
   }
   .navbar__nav__custom {
     gap: 2rem;
