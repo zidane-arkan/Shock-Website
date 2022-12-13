@@ -3,6 +3,7 @@ import Navbar from "./components/layout/Navbar";
 import Footer from './components/layout/Footer';
 import AnimatedRoutes from './components/layout/AnimatedRoutes';
 import './fontawesomeicon';
+import './responsive.css';
 
 function App() {
   return (
