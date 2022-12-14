@@ -23,10 +23,10 @@ const TopContent = () => {
 const ProfileContent = () => {
     return (
         <article className='row justify-content-center'>
-            <article className="col-sm-12 col-md-6 col-xl-4">
+            <article className="col-sm-12 col-md-6 col-xl-6">
                 <img className='img__profile img-fluid' src={profile1} alt="profile" />
             </article>
-            <article className="col-sm-12 col-md-6 col-xl-5">
+            <article className="col-sm-12 col-md-6 col-xl-6">
                 <div className="portfolio__info profile__info">
                     <h3>We Are Professional Filmmaker</h3>
                     <p class="fst-italic py-3"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
