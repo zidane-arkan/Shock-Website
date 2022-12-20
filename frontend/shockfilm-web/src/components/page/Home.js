@@ -5,7 +5,7 @@ import img3 from '../../assets/heroSlider/img-3.png';
 import movie_1 from '../../assets/movie/movie-1.png';
 import icon_1 from '../../assets/aboutus/1.png';
 import man from '../../assets/movie/man.png';
-
+import MovieItem from '../ui/MovieItem';
 import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
@@ -85,88 +85,30 @@ const PopularWorks = () => {
                     <Link className="nav-link nav__link__custom">View all</Link>
                 </article>
                 <article className="movie__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <div className="videotype__img">
-                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                                <div className="gallery-links d-flex align-items-center justify-content-center">
-                                    <button id="_o5WVCCONsA" onClick={backdropHandler}  className='fontAwesome__btn'>
-                                        <FontAwesomeIcon id="_o5WVCCONsA"  icon="fa-solid fa-maximize" size='xl' />
-                                    </button>
-                                    <Link to='portfolio' className='fontAwesome__btn'>
-                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
-                                    </Link>
-                                </div>
-                            </div>
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <div className="videotype__img">
-                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                                <div className="gallery-links d-flex align-items-center justify-content-center">
-                                    <FontAwesomeIcon onClick={backdropHandler} id='_o5WVCCONsA' icon="fa-solid fa-maximize" size='xl' />
-                                    <Link to='/' className='fontAwesome__btn'>
-                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
-                                    </Link>
-                                </div>
-                            </div>
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <div className="videotype__img">
-                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                                <div className="gallery-links d-flex align-items-center justify-content-center">
-                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
-                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
-                                    </button>
-                                    <Link to='/' className='fontAwesome__btn'>
-                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
-                                    </Link>
-                                </div>
-                            </div>
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="movie__item col-sm-6 col-md-6 col-xl-3">
-                        <div className="videotype__top">
-                            <div className="videotype__img">
-                                <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                                <div className="gallery-links d-flex align-items-center justify-content-center">
-                                    <button className='fontAwesome__btn' onClick={backdropHandler}>
-                                        <FontAwesomeIcon icon="fa-solid fa-maximize" size='xl' />
-                                    </button>
-                                    <Link to='/' className='fontAwesome__btn'>
-                                        <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
-                                    </Link>
-                                </div>
-                            </div>
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
+                    <MovieItem
+                        backdropHandler={backdropHandler}
+                        embedIdValue='uty2zd7qizA'
+                        movieTitle="Jagat Semesta"
+                        movieType="Short Film"
+                    />
+                    <MovieItem
+                        backdropHandler={backdropHandler}
+                        embedIdValue='uty2zd7qizA'
+                        movieTitle="Dua Darah"
+                        movieType="Short Film"
+                    />
+                    <MovieItem
+                        backdropHandler={backdropHandler}
+                        embedIdValue='ILRs2r6lcHY'
+                        movieTitle="Nama dan Jaguar"
+                        movieType="Short Film"
+                    />
+                    <MovieItem
+                        backdropHandler={backdropHandler}
+                        embedIdValue='ILRs2r6lcHY'
+                        movieTitle="Kekuatan Bersih"
+                        movieType="Short Film"
+                    />
                 </article>
             </section>
         </>
@@ -373,14 +315,14 @@ const Home = () => {
         >
             <HeroSlider />
             <HeroHeading />
-            
+
             <main className="row__custom">
                 <PopularWorks />
                 <BehindScene />
                 <AboutUs />
                 <Discover />
                 <Clients />
-                
+
             </main>
         </motion.div>
     );
