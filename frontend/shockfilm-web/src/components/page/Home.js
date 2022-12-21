@@ -5,7 +5,7 @@ import img3 from '../../assets/heroSlider/img-3.png';
 import movie_1 from '../../assets/movie/movie-1.png';
 import icon_1 from '../../assets/aboutus/1.png';
 import man from '../../assets/movie/man.png';
-import Movie from '../layout/Lists/Movie';
+import MovieItem from '../layout/Lists/MovieItem';
 import DiscoverItem from '../layout/Lists/DiscoverItem';
 import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
@@ -74,9 +74,6 @@ const PopularWorks = () => {
             document.body.style.overflow = 'hidden';
         }
     }, [isBackdrop]);
-    const movieImg = {
-        "1": movie_1
-    };
     return (
         <>
             <section className="row row__margin__bottom row__custom__1">
@@ -86,29 +83,33 @@ const PopularWorks = () => {
                     <Link className="nav-link nav__link__custom">View all</Link>
                 </article>
                 <article className="movie__box col-sm-12 col-md-12 col-xl-12">
-                    <Movie
+                    <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='uty2zd7qizA'
                         movieTitle="Jagat Semesta"
                         movieType="Short Film"
+                        movieImgId="1"
                     />
-                    <Movie
+                    <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='uty2zd7qizA'
                         movieTitle="Dua Darah"
                         movieType="Short Film"
+                        movieImgId="1"
                     />
-                    <Movie
+                    <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Nama dan Jaguar"
                         movieType="Short Film"
+                        movieImgId="1"
                     />
-                    <Movie
+                    <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Kekuatan Bersih"
                         movieType="Short Film"
+                        movieImgId="1"
                     />
                 </article>
             </section>
@@ -189,14 +190,46 @@ const Discover = () => {
             </article>
             <section className="row__custom__3">
                 <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
-                    <DiscoverItem />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieType="Short Film"
+                        movieImgId="1"
+                    />
                 </article>
                 {/* <article className="discover__box col-sm-12 col-md-12 col-xl-12">
                 </article> */}

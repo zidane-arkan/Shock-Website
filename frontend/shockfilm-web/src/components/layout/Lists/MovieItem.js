@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import movie_1 from '../../../assets/movie/movie-1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const Movie = ({ backdropHandler, embedIdValue, movieTitle, movieType }) => {
+const MovieItem = ({ backdropHandler, embedIdValue, movieTitle, movieType,movieImgId }) => {
     const movieImg = {
         "1": movie_1
     };
@@ -11,7 +11,7 @@ const Movie = ({ backdropHandler, embedIdValue, movieTitle, movieType }) => {
         <div className="movie__item col-sm-6 col-md-6 col-xl-3">
             <div className="videotype__top">
                 <div className="videotype__img">
-                    <img src={movieImg[`1`]} alt="Movie-1" width="100%" />
+                    <img src={movieImg[`${movieImgId}`]} alt="Movie-1" width="100%" />
                     <div className="gallery-links d-flex align-items-center justify-content-center">
                         <button id={embedIdValue} onClick={backdropHandler} className='fontAwesome__btn'>
                             <FontAwesomeIcon id={embedIdValue} icon="fa-solid fa-maximize" size='xl' />
@@ -32,4 +32,4 @@ const Movie = ({ backdropHandler, embedIdValue, movieTitle, movieType }) => {
     );
 };
 
-export default Movie;
+export default MovieItem;
