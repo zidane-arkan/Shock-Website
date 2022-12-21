@@ -5,7 +5,8 @@ import img3 from '../../assets/heroSlider/img-3.png';
 import movie_1 from '../../assets/movie/movie-1.png';
 import icon_1 from '../../assets/aboutus/1.png';
 import man from '../../assets/movie/man.png';
-import MovieItem from '../ui/MovieItem';
+import Movie from '../layout/Lists/Movie';
+import DiscoverItem from '../layout/Lists/DiscoverItem';
 import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
@@ -85,25 +86,25 @@ const PopularWorks = () => {
                     <Link className="nav-link nav__link__custom">View all</Link>
                 </article>
                 <article className="movie__box col-sm-12 col-md-12 col-xl-12">
-                    <MovieItem
+                    <Movie
                         backdropHandler={backdropHandler}
                         embedIdValue='uty2zd7qizA'
                         movieTitle="Jagat Semesta"
                         movieType="Short Film"
                     />
-                    <MovieItem
+                    <Movie
                         backdropHandler={backdropHandler}
                         embedIdValue='uty2zd7qizA'
                         movieTitle="Dua Darah"
                         movieType="Short Film"
                     />
-                    <MovieItem
+                    <Movie
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Nama dan Jaguar"
                         movieType="Short Film"
                     />
-                    <MovieItem
+                    <Movie
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Kekuatan Bersih"
@@ -188,98 +189,18 @@ const Discover = () => {
             </article>
             <section className="row__custom__3">
                 <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                        <div className="videotype__bottom">
-                            <p>Short Film</p>
-                            <button className="btn btn__see btn-outline-light">See</button>
-                        </div>
-                    </div>
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
+                    <DiscoverItem />
                 </article>
                 {/* <article className="discover__box col-sm-12 col-md-12 col-xl-12">
                 </article> */}
-                <button className="btn__custom btn__contact mt-sm-3 mt-xl-5" type="button">Load More</button>
+                {/* <button className="btn__custom btn__contact mt-sm-3 mt-xl-5" type="button">Load More</button> */}
             </section>
         </section>
     );

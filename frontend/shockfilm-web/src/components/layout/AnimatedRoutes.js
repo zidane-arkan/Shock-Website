@@ -20,6 +20,7 @@ const AnimatedRoutes = () => {
                 <Route path='ourprofile' element={<OurProfile />} />
                 <Route path='contactus' element={<ContactUs />} />
                 <Route path='works' element={<Works />} />
+                <Route path='*' element={<Home />} />
             </Routes>
         </AnimatePresence>
     );

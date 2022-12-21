@@ -14,7 +14,7 @@ li,
 a,
 .nav-link {
   color: #fafafa;
-  transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.5s;
 }
 
 a:hover,
@@ -27,6 +27,14 @@ a:hover,
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+}
+
+.heading__bottom button {
+  transition: all ease-in-out 0.5s;
+}
+.heading__bottom button:hover {
+  background: transparent;
+  border: 1px solid #9b51e0;
 }
 .nav-link:hover,
 .navbar-nav .active {
@@ -558,7 +566,7 @@ input[type="number"]:hover {
   .hero__heading,
   .detail__heading {
     display: flex;
-    top: 8%;
+    top: 9%;
     flex-direction: column;
     width: 100%;
     gap: 1rem;
@@ -719,7 +727,6 @@ input[type="number"]:hover {
     gap: 2rem;
   }
 }
-
 
 /*FOOTER CSS*/
 footer {

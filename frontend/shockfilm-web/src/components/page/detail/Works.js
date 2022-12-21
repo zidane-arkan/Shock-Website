@@ -43,7 +43,9 @@ const TopContent = () => {
                 <p>Shock Film is a community and a production house based in Palembang which aims to be a place for young people to convert their hobbies into the artworks! </p>
             </div>
             <div className="heading__bottom">
-                <button className="btn__custom btn__started" type="button">Get Started</button>
+                <Link to="/contactus">
+                    <button className="btn__custom btn__started" type="button">Get Started</button>
+                </Link>
             </div>
         </article>
     );

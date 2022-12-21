@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import movie_1 from '../../assets/movie/movie-1.png';
+import movie_1 from '../../../assets/movie/movie-1.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function MovieItem({ backdropHandler, embedIdValue, movieTitle, movieType }) {
+const Movie = ({ backdropHandler, embedIdValue, movieTitle, movieType }) => {
     const movieImg = {
         "1": movie_1
     };
@@ -16,7 +16,7 @@ function MovieItem({ backdropHandler, embedIdValue, movieTitle, movieType }) {
                         <button id={embedIdValue} onClick={backdropHandler} className='fontAwesome__btn'>
                             <FontAwesomeIcon id={embedIdValue} icon="fa-solid fa-maximize" size='xl' />
                         </button>
-                        <Link to='portfolio' className='fontAwesome__btn'>
+                        <Link to='works' className='fontAwesome__btn'>
                             <FontAwesomeIcon icon="fa-solid fa-link" size='xl' />
                         </Link>
                     </div>
@@ -32,4 +32,4 @@ function MovieItem({ backdropHandler, embedIdValue, movieTitle, movieType }) {
     );
 };
 
-export default MovieItem;
+export default Movie;

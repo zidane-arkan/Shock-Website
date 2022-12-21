@@ -14,8 +14,7 @@ const Portfolio = () => {
             className="col-md-12 position-relative px-0 pt__custom"
         >
             <article className="row__custom">
-                <section className="row row__margin__bottom row__custom__1">
-                    
+                <section className="row row__margin__bottom row__custom__1">     
                     <section className="row__custom__3">
                         <article className="discover__box col-sm-12 col-md-12 col-xl-12">
                             <div className="discover__item col-sm-6 col-md-6 col__xl__custom__4">
@@ -151,7 +150,7 @@ const Portfolio = () => {
                                 </div>
                             </div>
                         </article>
-                        <button className="btn__custom btn__contact mt-sm-3 mt-xl-5" type="button">Load More</button>
+                        {/* <button className="btn__custom btn__contact mt-sm-3 mt-xl-5" type="button">Load More</button> */}
                     </section>
                 </section>
             </article>
