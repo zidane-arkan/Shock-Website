@@ -1,5 +1,5 @@
 import React from 'react';
-import InputContact from '../ui/InputContact';
+import InputField from '../ui/InputField';
 import phone from '../../assets/contactus/phone.png';
 import location from '../../assets/contactus/location.png';
 import globe from '../../assets/contactus/globe.png';
@@ -39,34 +39,34 @@ const ContactUs = () => {
                         </section>
                     </article>
                     <article className="contactus__3 col-sm-12 col-md-8 col-xl-8">
-                        <div className="contactus__title">
+                        <section className="contactus__title">
                             <h2>Contact Now</h2>
                             <p>In diam consequat nec eu. Eu sem nec vel, sollicitudin ipsum viverra sed nibh amet. Nunc, et pharetra, duis tortor dictum nisl. Id vestibulum tincidunt adipiscing gravida risus.</p>
-                        </div>
+                        </section>
                         <form className="form__contact__box" >
                             <div className="form__contact">
-                                <InputContact
+                                <InputField
                                     type="text"
                                     typeName="Name"
                                     typeId="name"
                                     htmlFor="name"
                                     ariaDescribe="nameHelp"
                                 />
-                                <InputContact
+                                <InputField
                                     type="email"
                                     typeName="Email"
                                     typeId="email"
                                     htmlFor="email"
                                     ariaDescribe="emailHelp"
                                 />
-                                <InputContact
+                                <InputField
                                     type="password"
                                     typeName="Password"
                                     typeId="exampleInputPassword1"
                                     htmlFor="exampleInputPassword1"
                                     ariaDescribe="passwordHelp"
                                 />
-                                <InputContact
+                                <InputField
                                     type="text"
                                     typeName="Message"
                                     typeId="message"

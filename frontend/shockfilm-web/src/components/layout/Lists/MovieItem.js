@@ -32,4 +32,4 @@ const MovieItem = ({ backdropHandler, embedIdValue, movieTitle, movieType,movieI
     );
 };
 
-export default MovieItem;
+export default React.memo(MovieItem);

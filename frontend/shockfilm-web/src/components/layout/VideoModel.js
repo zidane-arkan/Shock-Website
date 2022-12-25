@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { createPortal } from 'react-dom';
 
 const Video = ({ embedId }) => {
-    let dummy = '_o5WVCCONsA';
+    // let dummy = '_o5WVCCONsA';
     return (
             <div className="modal-video-body">
                 <div className="modal-video-inner" style={{ "width": "1733px" }}>

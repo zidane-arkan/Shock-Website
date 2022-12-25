@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-const InputContact = ({ type, typeName, typeId, htmlfor, ariaDescribe }) => {
+const InputField = ({ type, typeName, typeId, htmlfor, ariaDescribe }) => {
     const refData = useRef();
     const [isFocus, setIsFocus] = useState(false);
     const top = {
@@ -11,6 +11,7 @@ const InputContact = ({ type, typeName, typeId, htmlfor, ariaDescribe }) => {
         e.preventDefault();
         setIsFocus(!isFocus);
         const value = refData.current.value.length;
+        console.log(value);
         if (value > 0) {
             setIsFocus(true);
             console.log(value);
@@ -38,4 +39,4 @@ const InputContact = ({ type, typeName, typeId, htmlfor, ariaDescribe }) => {
     );
 };
 
-export default InputContact;
+export default InputField;

@@ -33,8 +33,9 @@ a:hover,
   transition: all ease-in-out 0.5s;
 }
 .heading__bottom button:hover {
-  background: transparent;
   border: 1px solid #9b51e0;
+  background: transparent;
+  
 }
 .nav-link:hover,
 .navbar-nav .active {
@@ -130,7 +131,7 @@ input[type="number"]:hover {
   color: #a7a7a7;
   font-weight: 500;
   font-size: 1.125rem;
-  line-height: 22px;
+  line-height: 1.125em;
   cursor: text;
 }
 
@@ -235,7 +236,7 @@ input[type="number"]:hover {
     width: 50%;
     height: 50px;
     font-size: 0.8rem;
-    line-height: 26px;
+    line-height: 2em;
     letter-spacing: 1px;
     font-weight: 500;
     padding: 12px 24px;
@@ -413,12 +414,12 @@ input[type="number"]:hover {
   .contactus__title:nth-child(1) h2 {
     font-weight: 500;
     font-size: 3.5rem;
-    line-height: 68px;
+    line-height: 1em;
   }
   .contactus__title:nth-child(1) p {
     font-size: 1.25rem;
     width: 100%;
-    line-height: 24px;
+    line-height: 1.25em;
     text-align: justify;
     color: #a7a7a7;
   }
@@ -451,7 +452,7 @@ input[type="number"]:hover {
   .bloglatest__top div h6 {
     font-size: 1.5rem;
     font-weight: 500;
-    line-height: 32px;
+    line-height: 1.5em;
   }
   .bloglatest__wrap {
     display: flex;
@@ -485,7 +486,7 @@ input[type="number"]:hover {
 
   .btn__custom {
     font-size: 1.25rem;
-    line-height: 36px;
+    line-height: 1.25em;
     letter-spacing: 1px;
     font-weight: 500;
     padding: 12px 24px;
@@ -606,6 +607,7 @@ input[type="number"]:hover {
     padding: 12px 24px;
     width: 218px;
     height: 60px;
+    transition: all ease-in-out 0.5s;
   }
   .detail__heading .heading__bottom .btn__custom {
     font-size: 1.25rem;
@@ -619,6 +621,7 @@ input[type="number"]:hover {
     color: #fafafa;
     border: 0;
     background: linear-gradient(103.91deg, #9b51e0 21.01%, rgba(48, 129, 237, 0.8) 100%);
+    transition: all ease-in-out 0.5s;
   }
   .heading__bottom .btn__contact {
     color: #fafafa;
@@ -660,7 +663,7 @@ input[type="number"]:hover {
 
   .behind__text .btn__custom {
     font-size: 1.25rem;
-    line-height: 36px;
+    line-height: 1.25em;
     letter-spacing: 1px;
     font-weight: 500;
     padding: 12px 24px;
@@ -710,7 +713,7 @@ input[type="number"]:hover {
     font-style: normal;
     font-weight: 400;
     font-size: 1.125rem;
-    line-height: 24px;
+    line-height: 1.125em;
   }
   /*Our Clients CSS*/
   .clients__box {

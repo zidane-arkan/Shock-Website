@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
@@ -10,7 +10,6 @@ import DiscoverItem from '../layout/Lists/DiscoverItem';
 import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
-import InputContact from '../ui/InputContact';
 import VideoModel from '../layout/VideoModel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -60,15 +59,14 @@ const HeroHeading = () => {
 const PopularWorks = () => {
     const [isBackdrop, setIsBackdrop] = useState(false);
     const [embedId, setEmbedId] = useState('');
-    const backdropHandler = (e) => {
+    const backdropHandler = useCallback((e) => {
         const id = e.target.parentNode.id;
         setEmbedId(id);
-        setIsBackdrop((newValue) => {
+        setIsBackdrop((oldValue) => {
             document.body.style.overflow = 'unset';
-            return !newValue;
+            return !oldValue;
         });
-        console.log(id);
-    };
+    }, []);
     useEffect(() => {
         if (isBackdrop) {
             document.body.style.overflow = 'hidden';
