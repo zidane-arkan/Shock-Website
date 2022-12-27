@@ -17,7 +17,7 @@ a,
   transition: all ease-in-out 0.5s;
 }
 
-a:hover,
+
 .nav-link:hover,
 .navbar-nav .active {
   font-weight: 600;
@@ -29,13 +29,18 @@ a:hover,
   -moz-text-fill-color: transparent;
 }
 
+/* .videotype__bottom button:hover {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: black;
+  -moz-text-fill-color: black;
+} */
 .heading__bottom button {
   transition: all ease-in-out 0.5s;
 }
 .heading__bottom button:hover {
   border: 1px solid #9b51e0;
   background: transparent;
-  
 }
 .nav-link:hover,
 .navbar-nav .active {

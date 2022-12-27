@@ -93,21 +93,21 @@ const PopularWorks = () => {
                         embedIdValue='uty2zd7qizA'
                         movieTitle="Dua Darah"
                         movieType="Short Film"
-                        movieImgId="1"
+                        movieImgId="2"
                     />
                     <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Nama dan Jaguar"
                         movieType="Short Film"
-                        movieImgId="1"
+                        movieImgId="3"
                     />
                     <MovieItem
                         backdropHandler={backdropHandler}
                         embedIdValue='ILRs2r6lcHY'
                         movieTitle="Kekuatan Bersih"
                         movieType="Short Film"
-                        movieImgId="1"
+                        movieImgId="4"
                     />
                 </article>
             </section>

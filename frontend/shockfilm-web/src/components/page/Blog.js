@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import movie_1 from '../../assets/blog/1.png';
-
+import DiscoverItem from '../layout/Lists/DiscoverItem';
 import { Link } from 'react-router-dom';
 
 const BlogLatest = () => {
@@ -31,7 +31,6 @@ const BlogLatest = () => {
                             <h6>Apa yang membuat film itu bagus?</h6>
                             <img src={movieImg[`${1}`]} alt="Movie-1" width="40%" />
                         </div>
-
                     </div>
                 </div>
                 <div className="blog__item col-sm-12 col-md-12 col-xl-12">
@@ -70,48 +69,30 @@ const BlogEditing = () => {
             </article>
             <section className="row__custom__3 row__custom__bottom">
                 <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Berjalan Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
                 </article>
             </section>
         </>
@@ -131,48 +112,30 @@ const BlogWriting = () => {
             </article>
             <section className="row__custom__3">
                 <article className="discover__box col-sm-12 col-md-12 col-xl-12">
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
-                    <div className="discover__item col-sm-6 col-md-6 col__xl__custom__3">
-                        <div className="videotype__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Dua Pilar Satu Atap</h5>
-                            <span className="line"></span>
-                        </div>
-                    </div>
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Berjalan Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Tiga Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
+                    <DiscoverItem
+                        movieTitle="Dua Pilar Satu Atap"
+                        movieImgId="1"
+                    />
                 </article>
             </section>
         </>
