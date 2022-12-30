@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import movie_1 from '../../assets/blog/1.png';
 import DiscoverItem from '../layout/Lists/DiscoverItem';
+import BlogItem from '../layout/Lists/BlogItem';
 import { Link } from 'react-router-dom';
 
 const BlogLatest = () => {
@@ -13,44 +14,29 @@ const BlogLatest = () => {
             <section className="blog__heading col-sm-12 col-md-6 col-xl-5">
                 <h2>Our latest news</h2>
                 <div className="flex__custom">
-                    <div className=" blog__item col-sm-12 col-md-12 col-xl-12">
-                        <div className="bloglatest__top">
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="100%" />
-                            <h5>Tips Membuat film horror</h5>
-                        </div>
-                    </div>
+                    <BlogItem
+                        title="Cara Membuat Film Horror"
+                        blogImgId='1'
+                        blogType="new"
+                    />
                 </div>
             </section>
             <section className='blog__line col-sm-2 col-md-2 col__line__custom'>
                 <span className="line"></span>
             </section>
             <section className="bloglatest__wrap col-sm-12 col-md-6 col-xl-5 ">
-                <div className="blog__item col-sm-12 col-md-12 col-xl-12">
-                    <div className="bloglatest__top">
-                        <div>
-                            <h6>Apa yang membuat film itu bagus?</h6>
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="40%" />
-                        </div>
-                    </div>
-                </div>
-                <div className="blog__item col-sm-12 col-md-12 col-xl-12">
-                    <div className="bloglatest__top">
-                        <div>
-                            <h6>Apa yang membuat film itu bagus?</h6>
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="40%" />
-                        </div>
-
-                    </div>
-                </div>
-                <div className="blog__item col-sm-12 col-md-12 col-xl-12">
-                    <div className="bloglatest__top">
-                        <div>
-                            <h6>Apa yang membuat film itu bagus?</h6>
-                            <img src={movieImg[`${1}`]} alt="Movie-1" width="40%" />
-                        </div>
-
-                    </div>
-                </div>
+                <BlogItem
+                    title="Cara Membuat Film Horror"
+                    blogImgId='1'
+                />
+                <BlogItem
+                    title="Cara Membuat Film Horror"
+                    blogImgId='1'
+                />
+                <BlogItem
+                    title="Cara Membuat Film Horror"
+                    blogImgId='1'
+                />
             </section>
         </>
     );
