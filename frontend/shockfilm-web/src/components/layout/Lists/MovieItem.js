@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import movie_1 from '../../../assets/movie/movie-1.png';
+import movie_2 from '../../../assets/movie/movie-2.png';
+import movie_3 from '../../../assets/movie/movie-3.png';
+import movie_4 from '../../../assets/movie/movie-4.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const MovieItem = ({ backdropHandler, embedIdValue, movieTitle, movieType,movieImgId }) => {
+const MovieItem = ({ backdropHandler, embedIdValue, movieTitle, movieType, movieImgId }) => {
     const movieImg = {
-        "1": movie_1
+        "1": movie_1,
+        "2": movie_2,
+        "3": movie_3,
+        "4": movie_4,
     };
     return (
         <div className="movie__item col-sm-6 col-md-6 col-xl-3">
