@@ -4,6 +4,7 @@ import Footer from './components/layout/Footer';
 import AnimatedRoutes from './components/layout/AnimatedRoutes';
 import './fontawesomeicon';
 import './responsive.css';
+import './mobile.css';
 
 function App() {
   return (

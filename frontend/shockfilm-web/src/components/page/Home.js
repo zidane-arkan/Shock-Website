@@ -117,7 +117,7 @@ const PopularWorks = () => {
 };
 const BehindScene = () => {
     return (
-        <section className="row row__margin__bottom ">
+        <section className="row row__margin__bottom behindscene__box ">
             <article className="behind__1 col-sm-12 col-md-3 col-xl-4">
                 <div className="behind__title">
                     <h2>Men behind the scenes.</h2>
