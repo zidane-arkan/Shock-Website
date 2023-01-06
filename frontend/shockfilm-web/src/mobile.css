@@ -63,10 +63,14 @@
   }
   .portfolio__info h3 {
     position: relative;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5em;
     font-weight: 700;
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+  .profile__box{
+    gap: 2rem;
   }
   .profile__info h3 {
     padding-bottom: 0;
@@ -75,7 +79,7 @@
   .portfolio__info ul {
     list-style: none;
     padding: 0;
-    font-size: 0.5rem;
+    font-size: 1rem;
   }
   .portfolio__info ul li {
     display: flex;
@@ -471,11 +475,11 @@
   .detail__heading > .heading__top,
   .detail__heading > .heading__middle {
     display: inline-block;
-    width: 75%;
+    width: 95%;
   }
   .detail__heading > .heading__top,
   .detail__heading > .heading__middle {
-    width: 40%;
+    width: 100%;
   }
   .heading__bottom {
     display: flex;

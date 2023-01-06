@@ -24,7 +24,7 @@ const TopContent = () => {
 };
 const ProfileContent = () => {
     return (
-        <article className='row justify-content-center'>
+        <article className='profile__box row justify-content-center'>
             <article className="ourprofile__img__box col-sm-12 col-md-6 col-xl-5">
                 <img className='img__profile img-fluid' src={profile1} alt="profile" />
             </article>
