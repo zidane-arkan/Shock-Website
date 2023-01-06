@@ -14,7 +14,7 @@ const ContactUs = () => {
                         <h2>Having Project in mind?</h2>
                     </div>
                 </article>
-                <section className="row row__custom__5">
+                <section className="contactus__box row row__custom__5">
                     <article className="contactus__2 col-sm-12 col-md-3 col-xl-4">
                         <section className="contactus__2__box">
                             <div className="contactus__text">

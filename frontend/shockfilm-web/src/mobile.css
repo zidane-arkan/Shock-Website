@@ -1,8 +1,8 @@
 @media screen and (min-width: 375px) and (max-width: 450px) {
-  .bg__black{
+  .bg__black {
     background-color: black !important;
   }
-  .bg__transparent{
+  .bg__transparent {
     background-color: transparent;
   }
   .navbar__header {
@@ -161,8 +161,8 @@
   .btn__submit__contact {
     font-size: 0.8rem;
     padding: 12px 24px;
-    width: 218px;
-    height: 60px;
+    width: 150px;
+    height: 50px;
   }
   .row__detail__blog {
     width: 60%;
@@ -191,7 +191,7 @@
   .row__custom__4 {
     display: flex;
     flex-direction: column;
-    margin-top: 9rem;
+    margin-top: 5rem;
     gap: 2rem;
     align-items: center;
   }
@@ -211,6 +211,7 @@
   .contactus__2,
   .works__1 {
     display: flex;
+    width: 90%;
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
@@ -224,8 +225,17 @@
     justify-content: center;
     text-align: center;
   }
-
+  .contactus__box {
+    flex-direction: column-reverse;
+    gap: 3rem;
+  }
+  .label__custom {
+    font-size: 1rem;
+    line-height: 1.125em;
+    cursor: text;
+  }
   .contactus__2 {
+    align-items: center;
     justify-content: center;
     gap: 2rem;
   }
@@ -255,7 +265,7 @@
     padding: 5rem 3rem;
     background: #12111a;
     box-shadow: 0px 4px 40px rgb(0 0 0 / 8%);
-    gap: 5rem;
+    gap: 3rem;
   }
   .behind__text,
   .contactus__text {

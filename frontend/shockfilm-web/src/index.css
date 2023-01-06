@@ -130,6 +130,9 @@ input[type="email"]:hover,
 input[type="number"]:hover {
   box-shadow: inset 0 -1px 0 #ddd;
 }
+
+
+/*Label CSS*/
 .label__custom {
   position: absolute;
   color: #a7a7a7;
@@ -138,8 +141,6 @@ input[type="number"]:hover {
   line-height: 1.125em;
   cursor: text;
 }
-
-/*Label CSS*/
 .label__custom__on {
   top: 1rem;
 }
