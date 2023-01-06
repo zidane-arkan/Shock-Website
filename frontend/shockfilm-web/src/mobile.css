@@ -28,7 +28,7 @@
   a {
     font-size: 1rem !important;
   }
-  .navbar-toggler__custom{
+  .navbar-toggler__custom {
     background-color: white;
   }
   .author__blog__box {
@@ -408,6 +408,25 @@
   .navbar__header,
   .row__custom {
     padding: 1.5rem 1rem;
+  }
+  .nav__hide {
+    display: none;
+    transition: all ease-in-out 0.5s;
+    transform: translateY(100%);
+    transition: 0.2s ease-out;
+  }
+  .nav__show {
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    flex-direction: column;
+    height: calc(100vh - 77px);
+    background-color: black;
+    border-top: 1px solid black;
+    padding: 3rem;
+    transform: translateY(0);
+    transition: 0.2s ease-out;
   }
   .form-inline button {
     font-size: 0.7rem;

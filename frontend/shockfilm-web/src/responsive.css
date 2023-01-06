@@ -1,5 +1,11 @@
 /* SIZE 1360PX TO 1700PX */
 @media screen and (min-width: 1360px) and (max-width: 1700px) {
+  .nav__custom {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+  }
   .author__blog__box {
     display: flex;
     flex-direction: row;
@@ -396,7 +402,7 @@
     gap: 2rem;
   }
 
-  .carousel-item img{
+  .carousel-item img {
     object-fit: cover;
     height: 100vh;
   }

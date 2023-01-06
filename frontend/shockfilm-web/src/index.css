@@ -17,7 +17,6 @@ a,
   transition: all ease-in-out 0.5s;
 }
 
-
 .nav-link:hover,
 .navbar-nav .active {
   font-weight: 600;
@@ -178,6 +177,12 @@ input[type="number"]:hover {
 }
 /*SIZE 1800PX >*/
 @media screen and (min-width: 1800px) {
+  .nav__custom {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+  }
   .author__blog__box {
     display: flex;
     flex-direction: row;
