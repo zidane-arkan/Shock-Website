@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import img1 from '../../assets/heroSlider/img-1.png';
 import img2 from '../../assets/heroSlider/img-2.png';
 import img3 from '../../assets/heroSlider/img-3.png';
@@ -11,7 +11,6 @@ import clientList from '../../assets/clients/clientList.png';
 import { motion } from "framer-motion";
 import { Link } from 'react-router-dom';
 import VideoModel from '../layout/VideoModel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const HeroSlider = () => {
     return (

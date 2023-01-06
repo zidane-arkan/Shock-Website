@@ -4,11 +4,25 @@ import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [isNavResponsive, setNavbarResponsive] = useState(false);
+    const [isNavScroll, setIsNavScroll] = useState(false);
+    const changeBackground = () => {
+        console.log(window.scrollY);
+        if (window.scrollY >= 400) {
+            console.log(!isNavScroll)
+            return setIsNavScroll(!isNavScroll);
+        }
+        setIsNavScroll(false);
+    };
+    useEffect(() => {
+        changeBackground();
+        // adding the event when scroll change background
+        window.addEventListener("scroll", changeBackground);
+    }, []);
     const handlerNav = () => {
         setNavbarResponsive(!isNavResponsive);
     };
     return (
-        <nav className={`${isNavResponsive ? 'bg-black' : 'bg-transparent'} navbar navbar__header navbar-expand-lg navbar-light px-sm-4 py-sm-4 position-absolute`}>
+        <nav className={`${isNavResponsive ? 'bg-black' : 'bg-transparent'} ${isNavScroll ? 'bg__black' : 'bg__transparent'} navbar navbar__header navbar-expand-lg navbar-light px-sm-4 py-sm-4 position-absolute`}>
             <button onClick={handlerNav} className="navbar-toggler navbar-toggler__custom" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
             </button>

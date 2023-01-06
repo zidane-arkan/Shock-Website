@@ -1,4 +1,14 @@
 @media screen and (min-width: 375px) and (max-width: 450px) {
+  .bg__black{
+    background-color: black !important;
+  }
+  .bg__transparent{
+    background-color: transparent;
+  }
+  .navbar__header {
+    position: fixed !important;
+    z-index: 100;
+  }
   h1,
   h2 {
     font-size: 2rem;
@@ -69,7 +79,7 @@
     margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
   }
-  .profile__box{
+  .profile__box {
     gap: 2rem;
   }
   .profile__info h3 {
@@ -475,11 +485,11 @@
   .detail__heading > .heading__top,
   .detail__heading > .heading__middle {
     display: inline-block;
-    width: 95%;
+    width: 72%;
   }
   .detail__heading > .heading__top,
   .detail__heading > .heading__middle {
-    width: 100%;
+    width: 95%;
   }
   .heading__bottom {
     display: flex;

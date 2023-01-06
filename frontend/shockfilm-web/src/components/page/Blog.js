@@ -1,14 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import movie_1 from '../../assets/blog/1.png';
 import DiscoverItem from '../layout/Lists/DiscoverItem';
 import BlogItem from '../layout/Lists/BlogItem';
 import { Link } from 'react-router-dom';
 
 const BlogLatest = () => {
-    const movieImg = {
-        "1": movie_1
-    };
     return (
         <>
             <section className="blog__heading col-sm-12 col-md-6 col-xl-5">
@@ -42,9 +38,6 @@ const BlogLatest = () => {
     );
 };
 const BlogEditing = () => {
-    const movieImg = {
-        "1": movie_1
-    };
     return (
         <>
             <article className="popular__heading col-md-12 col-xl-12">
@@ -85,9 +78,6 @@ const BlogEditing = () => {
     );
 };
 const BlogWriting = () => {
-    const movieImg = {
-        "1": movie_1
-    };
     return (
         <>
             <article className="popular__heading col-md-12 col-xl-12">
@@ -128,9 +118,6 @@ const BlogWriting = () => {
     );
 };
 const Blog = () => {
-    const movieImg = {
-        "1": movie_1
-    };
     return (
         <motion.div
             initial={{ opacity: 0 }}
