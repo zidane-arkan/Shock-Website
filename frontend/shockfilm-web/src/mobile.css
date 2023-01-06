@@ -330,7 +330,7 @@
     display: flex;
     gap: 2rem;
     flex-direction: column;
-    height: 60vh;
+    height: 100%;
     justify-content: center;
   }
   .movie__box,
@@ -348,12 +348,15 @@
   .blog__item .videotype__bottom {
     width: 100%;
   }
+  .col__line__custom {
+    display: none;
+  }
 
   .col__xl__custom__4 {
     width: 100%;
   }
   .col__xl__custom__3 {
-    width: 30%;
+    width: 90%;
   }
 
   .btn__custom {
@@ -386,14 +389,14 @@
   }
 
   .blog__heading .flex__custom {
-    height: 60vh;
+    height: 100%;
     width: 100%;
     align-items: flex-start;
   }
 
   .blog__item .bloglatest__top h5 {
-    font-size: 3rem;
-    line-height: 60px;
+    font-size: 2rem;
+    line-height: 1.5em;
   }
   .heading__middle p {
     font-size: 0.8rem;
