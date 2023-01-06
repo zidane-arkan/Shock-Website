@@ -20,7 +20,7 @@
     margin: 0 !important;
   }
   h4 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   button {
     border-radius: 16px;
@@ -182,7 +182,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 9rem;
-    gap: 3.5rem;
+    gap: 4rem;
     align-items: center;
   }
   .row__custom__5 {
@@ -202,8 +202,8 @@
   .works__1 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     justify-content: center;
     gap: 1rem;
   }
@@ -217,7 +217,7 @@
 
   .contactus__2 {
     justify-content: center;
-    gap: 5.5rem;
+    gap: 2rem;
   }
   .contactus__2__box {
     display: flex;
@@ -517,7 +517,7 @@
   }
   /* Popular Works CSS */
   .row__margin__bottom {
-    margin-bottom: 8.5rem;
+    margin-bottom: 4rem;
   }
 
   .popular__heading {
